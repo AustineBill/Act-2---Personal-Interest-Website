@@ -7,49 +7,23 @@
     <title>Personal Interest and Hobbies</title>
 </head>
 <body>
-
-    <section id = "introduction">
-        <div class="intro-container">
-            <div class="content">
-                <h1 class="intro-text" id="intro-text"> W </h1>
-            </div>
-        </div>
-    </section>
-
     <section>
-        
-        <div id="whoIsWatching">
-            <div class="main-div">
-                <h1>Who's watching?</h1>
-                <div class="logo-section">
-                    <a href="#Movies"><img src="Assets/picsolo.jpg" alt="logo"><p>Austine</p></a>
-                    <a href="#Movies"><img src="Assets/dp.jpg" alt="logo"><p>Jade</p></a>
-                    <a href="#Movies"><img src="Assets/tuazon.jpg" alt="logo"><p>Mavi</p></a>
-                    <a href="#Movies"><img src="Assets/migz.jpg" alt="logo"><p>Miguel</p></a>
-                </div>
+    <div class="intro-container">
+        <div class="background"></div>
+        <div class="content">
+            <h1 class="intro-text" id="intro-text"> W </h1>
+            <div class="login-form" id="login-form">
+                <h2>Choose an account</h2>
+                <select id="account-select">
+                    <option value="user1">User 1</option>
+                    <option value="user2">User 2</option>
+                    <option value="user3">User 3</option>
+                </select>
+                <button onclick="startApp()">Start</button>
             </div>
         </div>
-    </section>
-
-
-    <section id="Movies">
-        <nav id = "desktop-nav">
-            <div class = "Name"> Austine </div>
-            <div>
-                <ul class ="nav-links">
-                    <li><a href = "#about"> About </a></li>
-                    <li><a href = "#skills"> Skills </a></li>
-                    <li><a href = "#experience"> Experience </a></li>
-                    <li><a href = "#whoIsWatching">Log out</a></li>
-                    <li><a href = "#contact"> Contacts </a></li>
-                </ul>
-            </div>
-        </nav>
-        <div class="section__text">
-          <p class="section__text__p1">Top 5</p>
-          <h1 class="title">Movies</h1>
-    </section>
-
+    </div>
+</section>
 
 
     <script src="script.js"></script>
