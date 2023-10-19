@@ -28,6 +28,9 @@ function toggleContent(button) {
 
     if (content.style.display === "none" || content.style.display === "") {
         content.style.display = "block";
+        button.innerText = "Less";
+    } else {
+        content.style.display = "none";
         /*containers.style.display = "none"; /*if you want to  on and off the content */
         button.innerText = "Less";
     } else {
