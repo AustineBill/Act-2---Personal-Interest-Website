@@ -1,3 +1,6 @@
+
+/* Introduction */
+
 const textElement = document.getElementById('intro-text');
 const text = 'WE FLEX';
 let index = 1;
@@ -15,11 +18,10 @@ function showNextLetter() {
     }
 }
 
-
 showNextLetter();
 
 
-
+/* Button to Read More Content */
 function toggleContent(button) {
     const contentId = button.getAttribute("data-toggle");
     const content = document.getElementById(contentId);
@@ -29,16 +31,14 @@ function toggleContent(button) {
     if (content.style.display === "none" || content.style.display === "") {
         content.style.display = "block";
         button.innerText = "Less";
-    } else {
-        content.style.display = "none";
-        /*containers.style.display = "none"; /*if you want to  on and off the content */
-        button.innerText = "Less";
+  
     } else {
         content.style.display = "none";
         /*containers.style.display = "block";  /*if you want to  on and off the content  */
         button.innerText = "More";
     }
 }
+
 
 
 
