@@ -1,0 +1,187 @@
+@media screen and (max-width: 1400px) {
+
+    nav {
+        gap: 10rem; /* Adjust the gap between navigation items */
+    }
+
+    .title {
+        font-size: 40px; /* Reduce the font size for titles */
+    }
+
+    .movie-button {
+        padding: 15px; /* Adjust the button padding */
+    }
+    .movie-title {
+        font-size: 20px; /* Reduce the font size for movie titles */
+    }
+    .movie-info {
+        font-size: 14px; /* Reduce the font size for movie info */
+    }
+    
+    .content {
+        flex-direction: column; /* Change to column layout for smaller screens */
+        align-items: center; /* Center items on smaller screens */
+    }
+
+    .text-container {
+        width: 100%; /* Use full width for text on smaller screens */
+        
+    }
+
+    
+}
+
+
+@media screen and (max-width: 1200px) {
+    
+    nav {
+        gap: 5rem; /* Adjust the gap between navigation items */
+    }
+
+    .logo-section a img {
+        width: 6rem; /* Adjust logo image size */
+        height: 6rem;
+    }
+
+    .main-div h1 {
+        font-size: 4rem; /* Further reduce the font size for h1 */
+    }
+    .section__text__p1 {
+        font-size: 24px; /* Adjust font size for paragraph text */
+    }
+
+    .main-div h1 {
+        font-size: 3rem; /* Adjust font size for h1 on smaller screens */
+    }
+    .section__text__p1 {
+        font-size: 20px; /* Adjust font size for paragraph text on smaller screens */
+    }
+
+    /* Add more responsive styles as needed for elements at this screen size */
+
+    /* Example: */
+    .header h1 {
+        font-size: 30px; /* Reduce font size for h1 within the header */
+        text-align: center; /* Adjust alignment for h1 within the header */
+    }
+    .header h2 {
+        font-size: 30px; /* Reduce font size for h2 within the header */
+        text-align: center; /* Adjust alignment for h2 within the header */
+    }
+    
+    .text-container h3 {
+        text-align: center;
+    }
+    
+    .movie-button {
+        padding: 10px; /* Further adjust the button padding */
+    }
+    .ratings {
+        font-size: 14px; /* Reduce the font size for ratings */
+    } 
+}
+
+
+@media screen and (max-width: 600px) {
+
+ 
+    .intro-text {
+        font-size: 6rem; /* Adjust the font size for the intro text */
+    }
+     
+    .main-div h1 {
+       text-align: center;
+    }
+
+    #desktop-nav{
+      justify-content: space-around;
+    }
+    .Name {
+        font-size: 3rem; /* Reduce the font size for the name */
+        padding-left: 5%;
+    }
+
+    .Web-title {
+        font-size: 3rem; /* Reduce the font size for the name */
+        padding-left: 5%;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+      }
+
+    .nav-links a {
+        gap: 0.3rem; /* Reduce the gap between navigation items */
+        color: rgb(253, 255, 255) ;
+    }
+    .main-div h1 {
+        font-size: 2.5rem; /* Further reduce the font size for h1 */
+        padding-top: 40%;
+        
+    }
+    .logo-section {
+        flex-direction: row; 
+        flex-wrap: wrap;
+        padding: 0.5rem 1rem; 
+        padding-bottom: 40%;
+    }
+
+    .logo-section a img {
+        width: 7rem; /* Adjust logo image size for smaller screens */
+        height: 7rem;
+    }
+
+    .logo-section a img:hover {
+        transform: scale(1.1);
+        text-shadow: 1px 1px 2px #e9ecee;
+      }
+
+    .img-container {
+        width: 200px;
+        height: auto;
+    }
+
+    .image-container:hover {
+        transform: scale(1.3);
+    }
+    
+    .movie-button {
+        padding: 8px; /* Further adjust the button padding for smaller screens */
+    }
+    .movie-button:hover {
+        background-color: #f0e7e7;
+      }
+      
+    .movie-title {
+        font-size: 18px; /* Further reduce font size for movie titles */
+    }
+    .movie-info {
+        font-size: 12px; /* Further reduce font size for movie info */
+    }
+    .genre, .cast {
+        font-size: 12px; /* Reduce font size for genre and cast */
+    }
+
+    .contact-info-container a {
+        padding: 0.5rem 1rem; /* Adjust padding for contact links */
+    }
+    .contact-img {
+        height: 150px; /* Reduce image size in the contact section */
+        width: 150px;
+    }
+
+    .content {
+        width: 100%; /* Use full width for smaller screens */
+    }
+
+    .text-container {
+        width: 70%; /* Use full width for text on smaller screens */
+        flex: wrap;
+    }
+}

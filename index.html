@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
     <title>Personal Interest and Hobbies</title>
 </head>
 <body>
@@ -12,16 +13,16 @@
         <div class="intro-container">
             <div class="content-intro">
                 <h1 class="intro-text" id="intro-text"> W </h1>
-                <audio autoplay>
-                    <source src="Assets/Netflix Intro.mp3" type="audio/mpeg">
-                    </audio>
-                    
             </div>
         </div>
     </section>
 
+    <section id="home_pic">
+        <div class = "Web-title"> WEFLEX  </div>
+            <button><a href = "#whoIsWatching" >GET STARTED</a></button>
+    </section>
+    
     <section>
-        
         <div id="whoIsWatching">
             <div class="main-div">
                 <h1>Who's watching?</h1>
@@ -41,13 +42,12 @@
             <div class = "Name"> Austine </div>
             <div>
                 <ul class ="nav-links">
-                    <li><a href = "#whoIsWatching">Choose Another Account</a></li>
+                    <li><a href = "#whoIsWatching"> Switch Account</a></li>
                     <li><a href = "#contact"> Contacts </a></li>
                 </ul>
             </div>
-        </nav>
+        </nav>   
         <h1 class="title">TOP 3 RECOMMENDED MOVIES</h1>
-
         <div class="content">
             <div class="image-container">
                 <img src="assets/shutter island.jpg" class="img-container" data-aos="fade-in" data-aos-once="false" data-aos-mirror="true">
@@ -83,7 +83,7 @@
                     </span><br>
                     <button class = "Button-moreinfo"  
                     data-toggle="shutterIslandContent" 
-                    onclick="toggleContent(this)">Read More</button> 
+                    onclick="toggleContent(this)">More</button> 
                 </div>
             </div>
         </div>
@@ -122,7 +122,7 @@
                 </span><br>
                 <button class = "Button-moreinfo"  
                 data-toggle="exorcistContent" 
-                onclick="toggleContent(this)">Read More</button> 
+                onclick="toggleContent(this)">More</button> 
                 </div>
             </div>
         </div>
@@ -160,7 +160,7 @@
                 </span><br>
                     <button class = "Button-moreinfo"  
                             data-toggle="fightClubContent" 
-                            onclick="toggleContent(this)">Read More</button>     
+                            onclick="toggleContent(this)">More</button>     
                 </div>
             </div>
         </div>
@@ -174,7 +174,7 @@
             <div class = "Name"> Mavi </div>
             <div>
                 <ul class ="nav-links">
-                    <li><a href = "#whoIsWatching">Choose Another Account</a></li>
+                    <li><a href = "#whoIsWatching"> Switch Account</a></li>
                     <li><a href = "#contact"> Contacts </a></li>
                 </ul>
             </div>
@@ -212,7 +212,7 @@
                     </span><br>
                     <button class = "Button-moreinfo"  
                     data-toggle="loveatfirstsight" 
-                    onclick="toggleContent(this)">Read More</button>
+                    onclick="toggleContent(this)">More</button>
                 
                 </div>
             </div>
@@ -249,7 +249,7 @@
                     </span><br>
                     <button class = "Button-moreinfo"  
                     data-toggle="mebeforeyou" 
-                    onclick="toggleContent(this)">Read More</button>
+                    onclick="toggleContent(this)">More</button>
                 
                 </div>
             </div>
@@ -284,7 +284,7 @@
                     </span><br>
                     <button class = "Button-moreinfo"  
                     data-toggle="threeidiots" 
-                    onclick="toggleContent(this)">Read More</button>
+                    onclick="toggleContent(this)">More</button>
                 
                 </div>
             </div>
@@ -296,7 +296,7 @@
             <div class = "Name"> Jade </div>
             <div>
                 <ul class ="nav-links">
-                    <li><a href = "#whoIsWatching">Choose Another Account</a></li>
+                    <li><a href = "#whoIsWatching">Switch Account</a></li>
                     <li><a href = "#contact"> Contacts </a></li>
                 </ul>
             </div>
@@ -341,7 +341,7 @@
                     </span><br>
                     <button class = "Button-moreinfo"  
                     data-toggle="anne" 
-                    onclick="toggleContent(this)">Read More</button> 
+                    onclick="toggleContent(this)">More</button> 
                 </div>
             </div>
         </div>
@@ -365,7 +365,7 @@
                     It's a brilliant blend of wit, wisdom, and relatability that keeps me coming back for more.
                 </p>
                 </span>
-                    <span id="container-more">
+                    <span id="papertown">
                     <h1 class = "movie-title">Paper Towns</h1>
                     <p class = "movie-info">Release Year: 2015</p>
                     <div class="ratings">
@@ -376,8 +376,9 @@
                     <p class="cast">Director: Jake Schreier</p>
                     <p class="cast">Cast: Nat Wolff, Cara Delevingne, Austin Abrams</p>
                     </span><br>
-
-                <button class = "Button-moreinfo"  id = "Button-moreinfo" onclick="toggleMenu()" >More Info</button> 
+                    <button class = "Button-moreinfo"  
+                    data-toggle="papertown" 
+                    onclick="toggleContent(this)">More</button> 
                 </div>
             </div>
         </div>
@@ -405,7 +406,7 @@
                    even in the face of adversity.
                 </p>
                 </span>
-                    <span id="container-more">
+                    <span id="notebook">
                     <h1 class = "movie-title">The Notebook</h1>
                     <p class = "movie-info">Release Year: 2004</p>
                     <div class="ratings">
@@ -416,8 +417,9 @@
                     <p class="cast">Director: Nick Cassavetesr</p>
                     <p class="cast">Cast: Gena Rowlands, James Garner, Rachel McAdams</p>
                     </span><br>
-
-                <button class = "Button-moreinfo"  id = "Button-moreinfo" onclick="toggleMenu()" >More Info</button> 
+                    <button class = "Button-moreinfo"  
+                    data-toggle="notebook" 
+                    onclick="toggleContent(this)">More</button> 
                 </div>
             </div>
         </div>
@@ -428,7 +430,7 @@
             <div class = "Name"> Miguel </div>
             <div>
                 <ul class ="nav-links">
-                    <li><a href = "#whoIsWatching">Choose Another Account</a></li>
+                    <li><a href = "#whoIsWatching">Switch Account</a></li>
                     <li><a href = "#contact"> Contacts </a></li>
                 </ul>
             </div>
@@ -452,9 +454,9 @@
                         Aren't we all do that. we sacrifice for people we cherish and love.
                     </p>
                 </span>
-                <span id="container-more">
-                    <h1>Interstellar</h1>
-                    <p>Release Year: 2014</p>
+                <span id="Interstellar">
+                    <h1 class = "movie-title">Interstellar</h1>
+                    <p class = "movie-info">Release Year: 2014</p>
                     <div class="ratings">
                         <span>IMDb: 8.7</span>
                         <span> 87%</span>
@@ -462,7 +464,9 @@
                     <p class="genre">Genre: adventure, drama, sci-fi</p>
                     <p class="cast">Cast: Matthew McConaughey, Anne Hathaway, Timothée Chalamet</p>
                 </span>
-                <button class="Button-moreinfo" onclick="toggleMenu(this)">More Info</button>
+                <button class = "Button-moreinfo"  
+                    data-toggle="Interstellar" 
+                    onclick="toggleContent(this)">More</button>
             </div>
         </div>
     </div>
@@ -482,9 +486,9 @@
                     thing at some point. We deliverately do things to achieve what we want.
                 </p>
             </span>
-            <span id="container-more">
-                <h1>Hustle</h1>
-                <p>Release Year: 2022</p>
+            <span id="Hustle">
+                <h1 class = "movie-title" >Hustle</h1>
+                <p class = "movie-info">Release Year: 2022</p>
                 <div class="ratings">
                     <span>IMDb: 7.3</span>
                     <span> 74%</span>
@@ -492,10 +496,12 @@
                 <p class="genre">Genre: comedy, drama, sport</p>
                 <p class="cast">Cast: Adam Sandler, Juancho Hernangomez, Anthony Edwards</p>
             </span>
-            <button class="Button-moreinfo" onclick="toggleMenu(this)">More Info</button>
+            <button class = "Button-moreinfo"  
+                    data-toggle="Hustle" 
+                    onclick="toggleContent(this)">More</button>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
         <div class="content">
     <div class="image-container">
@@ -513,9 +519,9 @@
                the reason behind their doings.
             </p>
         </span>
-        <span id="container-more">
-            <h1>A Man Called Otto</h1>
-            <p>Release Year: 2022</p>
+        <span id="AManCalledOtto">
+            <h1 class = "movie-title" >A Man Called Otto</h1>
+            <p class = "movie-info">Release Year: 2022</p>
             <div class="ratings">
                 <span>IMDb: 7.5%</span>
                 <span> 75%</span>
@@ -523,17 +529,16 @@
             <p class="genre">Genre: drama, comedy</p>
             <p class="cast">Cast: Tom Hanks, Rachel Keller, Mariana Treviño</p>
         </span>
-        <button class="Button-moreinfo" onclick="toggleMenu(this)">More Info</button>
-    </div>
-</div>
-</div>
-
-
-
+        <button class = "Button-moreinfo"  
+                    data-toggle="AManCalledOtto" 
+                    onclick="toggleContent(this)">More</button>
+            </div>
+        </div>
+      </div>
     </section>
 
-    
     <section id="contact">
+        <h1 class="title-contact">Developers</h1>
               <div class="contact-info-upper-container">
                 <div class="contact-info-container">
                   <img
@@ -559,6 +564,7 @@
                     <p><a href="https://github.com/miguelezra"> Github </a></p>
                 </div>
               </div>
+    </section> 
 
     
     <script src="script.js"></script>
