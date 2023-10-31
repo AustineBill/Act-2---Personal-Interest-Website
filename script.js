@@ -39,6 +39,38 @@ function toggleContent(button) {
     }
 }
 
+function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+  }
+
+
+
+
+/*function toggleAustine() {
+    const menu = document.querySelector(".menu-links");
+    const icon = document.querySelector(".hamburger-icon");
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
+}*/
+
+function toggleMenu() {
+    const menu = document.querySelector(".menu-links");
+    const icon = document.querySelector(".hamburger-icon");
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
+}
+
+
+/*function toggleMenu(navId) {
+    const menu = document.querySelector("#hamburger-nav .menu-links");
+    const icon = document.querySelector("#hamburger-nav .hamburger-icon");
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
+}
+
+toggleMenu("hamburger-nav");*/
+
 
 
 
