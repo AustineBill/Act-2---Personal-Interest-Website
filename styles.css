@@ -55,7 +55,11 @@ a:hover {
 
 /* Hamburger Menu */
 
-#hamburger-nav {
+#hamburger-nav-a {
+  display: none;
+}
+
+#hamburger-nav{
   display: none;
 }
 
@@ -540,5 +544,25 @@ section {
 #AManCalledOtto {
   display: none;
 }
+
+
+/* Footer */
+
+footer {
+  height: 20vh;
+  margin: 0 1 rem;
+}
+
+footer p {
+  text-align: center;
+  color: #f0e7e7;
+}
+
+footer a {
+  text-align: center;
+  color: rgb(255, 255, 255)
+}
+
+
 
 

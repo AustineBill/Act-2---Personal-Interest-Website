@@ -39,35 +39,37 @@ function toggleContent(button) {
     }
 }
 
+function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+  }
 
-function toggleAustine() {
+
+
+
+/*function toggleAustine() {
+    const menu = document.querySelector(".menu-links");
+    const icon = document.querySelector(".hamburger-icon");
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
+}*/
+
+function toggleMenu() {
     const menu = document.querySelector(".menu-links");
     const icon = document.querySelector(".hamburger-icon");
     menu.classList.toggle("open");
     icon.classList.toggle("open");
 }
 
-function toggleJade() {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
+
+/*function toggleMenu(navId) {
+    const menu = document.querySelector("#hamburger-nav .menu-links");
+    const icon = document.querySelector("#hamburger-nav .hamburger-icon");
     menu.classList.toggle("open");
     icon.classList.toggle("open");
 }
 
-function toggleMavi() {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
-}
-
-function toggleMiguel() {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
-}
-
+toggleMenu("hamburger-nav");*/
 
 
 
