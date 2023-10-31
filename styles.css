@@ -55,13 +55,19 @@ a:hover {
 
 /* Hamburger Menu */
 
-#hamburger-nav-a {
+
+#hamburger-nav-austine{
   display: none;
 }
 
-#hamburger-nav{
+#hamburger-nav-jade{
   display: none;
 }
+
+#hamburger-nav-mavi{
+  display: none;
+}
+
 
 .hamburger-menu {
   position: relative;
@@ -254,7 +260,7 @@ section {
 /* Choose Account*/
 #whoIsWatching {
   width: 100vw;
-  min-height: 100vh;
+  height: 110vh;
   background-color: #141414;
 }
 
@@ -406,6 +412,8 @@ section {
   height: auto;
   padding-top: 20%;
 }
+
+
 
 
 /* Buttons */ 
@@ -562,7 +570,5 @@ footer a {
   text-align: center;
   color: rgb(255, 255, 255)
 }
-
-
 
 

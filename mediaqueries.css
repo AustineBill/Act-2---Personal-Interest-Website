@@ -1,5 +1,8 @@
 @media screen and (max-width: 1400px) {
 
+    #hamburger-nav {
+        display: none;
+    }
     nav {
         gap: 10rem; /* Adjust the gap between navigation items */
     }
@@ -39,10 +42,21 @@
     
     #desktop-nav {
         display: none;
-      }
-    #hamburger-nav {
+    }
+  
+    #hamburger-nav-austine   {
         display: flex;
     }
+
+    #hamburger-nav-jade  {
+        display: flex;
+    }
+
+
+    #hamburger-nav-mavi   {
+        display: flex;
+    }
+
 
     .logo-section a img {
         width: 6rem; /* Adjust logo image size */

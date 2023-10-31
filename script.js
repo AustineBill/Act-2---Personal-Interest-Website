@@ -47,30 +47,39 @@ function onClick(element) {
 
 
 
-/*function toggleAustine() {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
-}*/
+function toggleMenu(menuId) {
+    var menu = document.getElementById(menuId);
+    var icon = menu.querySelector('.hamburger-icon');
+    var links = menu.querySelector('.menu-links');
 
-function toggleMenu() {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
+    if (menu.style.display === 'none' || menu.style.display === '') {
+        icon.classList.toggle("open");
+        menu.classList.toggle("open");
+        links.classList.toggle("open");
+       
+    } else {
+        menu.style.display = 'none';
+        icon.classList.remove('open');
+        links.style.display = 'none';
+    }
 }
 
+// Add event listeners for each hamburger icon
+var austineIcon = document.getElementById('hamburger-nav-austine').querySelector('.hamburger-icon');
+var jadeIcon = document.getElementById('hamburger-nav-jade').querySelector('.hamburger-icon');
+var maviIcon = document.getElementById('hamburger-nav-mavi').querySelector('.hamburger-icon');
 
-/*function toggleMenu(navId) {
-    const menu = document.querySelector("#hamburger-nav .menu-links");
-    const icon = document.querySelector("#hamburger-nav .hamburger-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
-}
+austineIcon.addEventListener('click', function () {
+    toggleMenu('hamburger-nav-austine');
+});
 
-toggleMenu("hamburger-nav");*/
+jadeIcon.addEventListener('click', function () {
+    toggleMenu('hamburger-nav-jade');
+});
 
+maviIcon.addEventListener('click', function () {
+    toggleMenu('hamburger-nav-mavi');
+});
 
 
 
