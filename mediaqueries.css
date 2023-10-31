@@ -57,6 +57,9 @@
         display: flex;
     }
 
+    #hamburger-nav-miguel   {
+        display: flex;
+    }
 
     .logo-section a img {
         width: 6rem; /* Adjust logo image size */

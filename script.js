@@ -68,6 +68,7 @@ function toggleMenu(menuId) {
 var austineIcon = document.getElementById('hamburger-nav-austine').querySelector('.hamburger-icon');
 var jadeIcon = document.getElementById('hamburger-nav-jade').querySelector('.hamburger-icon');
 var maviIcon = document.getElementById('hamburger-nav-mavi').querySelector('.hamburger-icon');
+var migsIcon = document.getElementById('hamburger-nav-miguel').querySelector('.hamburger-icon');
 
 austineIcon.addEventListener('click', function () {
     toggleMenu('hamburger-nav-austine');
@@ -80,6 +81,51 @@ jadeIcon.addEventListener('click', function () {
 maviIcon.addEventListener('click', function () {
     toggleMenu('hamburger-nav-mavi');
 });
+
+migsIcon.addEventListener('click', function () {
+    toggleMenu('hamburger-nav-miguel');
+});
+
+
+
+
+
+
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = "block";
+}
+
+// Function to close a modal
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+}
+
+// Get all modal buttons and set up event listeners
+var modalButtons = document.querySelectorAll(".img-container-options");
+modalButtons.forEach(function (button, index) {
+    var modalId = "myModal" + (index + 1);
+
+    button.onclick = function () {
+        openModal(modalId);
+    }
+});
+
+// Get all close buttons and set up event listeners
+var closeButtons = document.querySelectorAll(".close");
+closeButtons.forEach(function (closeButton, index) {
+    var modalId = "myModal" + (index + 1);
+
+    closeButton.onclick = function () {
+        closeModal(modalId);
+    }
+});
+
+// Function to close a modal when clicking outside
+window.onclick = function (event) {
+    if (event.target.classList.contains("modal")) {
+      event.target.style.display = "none";
+    }
+  };
 
 
 
