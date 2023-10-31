@@ -27,7 +27,6 @@
         width: 100%; /* Use full width for text on smaller screens */
         
     }
-
     
 }
 
@@ -36,6 +35,13 @@
     
     nav {
         gap: 5rem; /* Adjust the gap between navigation items */
+    }
+    
+    #desktop-nav {
+        display: none;
+      }
+    #hamburger-nav {
+        display: flex;
     }
 
     .logo-section a img {
@@ -93,9 +99,12 @@
        text-align: center;
     }
 
-    #desktop-nav{
-      justify-content: space-around;
-    }
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+      }
+
     .Name {
         font-size: 3rem; /* Reduce the font size for the name */
         padding-left: 5%;

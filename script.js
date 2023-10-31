@@ -40,12 +40,33 @@ function toggleContent(button) {
 }
 
 
-function toggleMenu() {
+function toggleAustine() {
     const menu = document.querySelector(".menu-links");
     const icon = document.querySelector(".hamburger-icon");
     menu.classList.toggle("open");
     icon.classList.toggle("open");
-  }
+}
+
+function toggleJade() {
+    const menu = document.querySelector(".menu-links");
+    const icon = document.querySelector(".hamburger-icon");
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
+}
+
+function toggleMavi() {
+    const menu = document.querySelector(".menu-links");
+    const icon = document.querySelector(".hamburger-icon");
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
+}
+
+function toggleMiguel() {
+    const menu = document.querySelector(".menu-links");
+    const icon = document.querySelector(".hamburger-icon");
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
+}
 
 
 
