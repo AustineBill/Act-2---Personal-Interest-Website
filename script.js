@@ -39,10 +39,6 @@ function toggleContent(button) {
     }
 }
 
-function onClick(element) {
-    document.getElementById("img01").src = element.src;
-    document.getElementById("modal01").style.display = "block";
-  }
 
 
 
@@ -104,6 +100,8 @@ function openModal(modalId) {
 function closeModal(modalId) {
     document.getElementById(modalId).style.display = "none";
 }
+
+
 
 // Get all modal buttons and set up event listeners
 var modalButtons = document.querySelectorAll(".img-container-options");
