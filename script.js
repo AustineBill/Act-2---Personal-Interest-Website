@@ -65,10 +65,15 @@ function toggleMenu(menuId) {
 }
 
 // Add event listeners for each hamburger icon
+var Icon = document.getElementById('hamburger-nav').querySelector('.hamburger-icon');
 var austineIcon = document.getElementById('hamburger-nav-austine').querySelector('.hamburger-icon');
 var jadeIcon = document.getElementById('hamburger-nav-jade').querySelector('.hamburger-icon');
 var maviIcon = document.getElementById('hamburger-nav-mavi').querySelector('.hamburger-icon');
 var migsIcon = document.getElementById('hamburger-nav-miguel').querySelector('.hamburger-icon');
+
+Icon.addEventListener('click', function () {
+    toggleMenu('hamburger-nav');
+});
 
 austineIcon.addEventListener('click', function () {
     toggleMenu('hamburger-nav-austine');
@@ -127,6 +132,10 @@ window.onclick = function (event) {
     }
   };
 
+
+
+
+	
 
 
 
