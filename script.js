@@ -47,31 +47,95 @@ function onClick(element) {
 
 
 
-/*function toggleAustine() {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
-}*/
+function toggleMenu(menuId) {
+    var menu = document.getElementById(menuId);
+    var icon = menu.querySelector('.hamburger-icon');
+    var links = menu.querySelector('.menu-links');
 
-function toggleMenu() {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
+    if (menu.style.display === 'none' || menu.style.display === '') {
+        icon.classList.toggle("open");
+        menu.classList.toggle("open");
+        links.classList.toggle("open");
+       
+    } else {
+        menu.style.display = 'none';
+        icon.classList.remove('open');
+        links.style.display = 'none';
+    }
 }
 
+// Add event listeners for each hamburger icon
+var Icon = document.getElementById('hamburger-nav').querySelector('.hamburger-icon');
+var austineIcon = document.getElementById('hamburger-nav-austine').querySelector('.hamburger-icon');
+var jadeIcon = document.getElementById('hamburger-nav-jade').querySelector('.hamburger-icon');
+var maviIcon = document.getElementById('hamburger-nav-mavi').querySelector('.hamburger-icon');
+var migsIcon = document.getElementById('hamburger-nav-miguel').querySelector('.hamburger-icon');
 
-/*function toggleMenu(navId) {
-    const menu = document.querySelector("#hamburger-nav .menu-links");
-    const icon = document.querySelector("#hamburger-nav .hamburger-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
+Icon.addEventListener('click', function () {
+    toggleMenu('hamburger-nav');
+});
+
+austineIcon.addEventListener('click', function () {
+    toggleMenu('hamburger-nav-austine');
+});
+
+jadeIcon.addEventListener('click', function () {
+    toggleMenu('hamburger-nav-jade');
+});
+
+maviIcon.addEventListener('click', function () {
+    toggleMenu('hamburger-nav-mavi');
+});
+
+migsIcon.addEventListener('click', function () {
+    toggleMenu('hamburger-nav-miguel');
+});
+
+
+
+
+
+
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = "block";
 }
 
-toggleMenu("hamburger-nav");*/
+// Function to close a modal
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+}
+
+// Get all modal buttons and set up event listeners
+var modalButtons = document.querySelectorAll(".img-container-options");
+modalButtons.forEach(function (button, index) {
+    var modalId = "myModal" + (index + 1);
+
+    button.onclick = function () {
+        openModal(modalId);
+    }
+});
+
+// Get all close buttons and set up event listeners
+var closeButtons = document.querySelectorAll(".close");
+closeButtons.forEach(function (closeButton, index) {
+    var modalId = "myModal" + (index + 1);
+
+    closeButton.onclick = function () {
+        closeModal(modalId);
+    }
+});
+
+// Function to close a modal when clicking outside
+window.onclick = function (event) {
+    if (event.target.classList.contains("modal")) {
+      event.target.style.display = "none";
+    }
+  };
 
 
+
+
+	
 
 
 

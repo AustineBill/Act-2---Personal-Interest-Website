@@ -55,13 +55,22 @@ a:hover {
 
 /* Hamburger Menu */
 
-#hamburger-nav-a {
-  display: none;
-}
-
 #hamburger-nav{
   display: none;
 }
+
+#hamburger-nav-austine{
+  display: none;
+}
+
+#hamburger-nav-jade{
+  display: none;
+}
+
+#hamburger-nav-mavi{
+  display: none;
+}
+
 
 .hamburger-menu {
   position: relative;
@@ -183,7 +192,6 @@ a:hover {
   display: flex;
   background-image: url("Assets/Netflix Bg.png");
   background-size: cover;
-  background-position: center center;
   position: relative;
   overflow-y: hidden;
 }
@@ -251,10 +259,40 @@ section {
 }
 
 
+
+/* About Section */
+
+#About {
+
+  height: 100vh;
+  background-color: #faf9f9;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  min-height: fit-content;
+  display: flex;
+}
+
+.video-container {
+  display: flex;
+  align-content: right;
+  justify-content: right;
+  padding: 100px 110px 10px 0px;
+
+}
+
+.about-container {
+  display: flex;
+  align-content: left;
+  justify-content: left;
+  padding: 150px 30px 10px 90px;
+
+}
+
+
 /* Choose Account*/
 #whoIsWatching {
   width: 100vw;
-  min-height: 100vh;
+  height: 110vh;
   background-color: #141414;
 }
 
@@ -386,6 +424,8 @@ section {
   color: white;
 }
 
+
+
 /* Image Container */
 .image-container {
   display: flex;
@@ -400,12 +440,65 @@ section {
   transform: scale(1.1);
 }
 
-
 .img-container {
   width: 300px;
   height: auto;
   padding-top: 20%;
 }
+
+.img-container-options {
+  width: 200px;
+  height: auto;
+  padding: 5px 10px 20px 10px;
+  flex: 1 1 1;
+  min-width: 100;
+}
+
+.img-container-options:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+/* Modal */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #131313;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 70% /* Could be more or less, depending on screen size */
+}
+
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 
 /* Buttons */ 
@@ -564,5 +657,34 @@ footer a {
 }
 
 
+/*
+.Image-content-prev {
+  position: absolute;
+  top: 50%;
+  width: 27px;
+  z-index: 1000;
+  left: 2%;
+  cursor: pointer;
+  color: transparent;
+  margin-top: -27px;
+}
+
+.Image-content-next {
+  height: 54px;
+  position: absolute;
+  top: 50%;
+  width: 27px;
+  z-index: 1000;
+  right: 2%;
+  cursor: pointer;
+  color: transparent;
+  margin-top: -27px;
+}
 
 
+.Image-content-prev:hover,
+.Image-content-next:hover {
+  opacity: 0.5;
+}
+
+/*
