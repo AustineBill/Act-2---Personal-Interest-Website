@@ -43,7 +43,10 @@
     #desktop-nav {
         display: none;
     }
-  
+    
+    #hamburger-nav   {
+        display: flex;
+    }
     #hamburger-nav-austine   {
         display: flex;
     }
