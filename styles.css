@@ -55,6 +55,9 @@ a:hover {
 
 /* Hamburger Menu */
 
+#hamburger-nav{
+  display: none;
+}
 
 #hamburger-nav-austine{
   display: none;
@@ -189,7 +192,6 @@ a:hover {
   display: flex;
   background-image: url("Assets/Netflix Bg.png");
   background-size: cover;
-  background-position: center center;
   position: relative;
   overflow-y: hidden;
 }
@@ -254,6 +256,36 @@ section {
   box-sizing: border-box;
   overflow-x: hidden;
   min-height: fit-content;
+}
+
+
+
+/* About Section */
+
+#About {
+
+  height: 100vh;
+  background-color: #faf9f9;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  min-height: fit-content;
+  display: flex;
+}
+
+.video-container {
+  display: flex;
+  align-content: right;
+  justify-content: right;
+  padding: 100px 110px 10px 0px;
+
+}
+
+.about-container {
+  display: flex;
+  align-content: left;
+  justify-content: left;
+  padding: 150px 30px 10px 90px;
+
 }
 
 
@@ -392,6 +424,8 @@ section {
   color: white;
 }
 
+
+
 /* Image Container */
 .image-container {
   display: flex;
@@ -413,10 +447,11 @@ section {
 }
 
 .img-container-options {
-  width: 300px;
+  width: 200px;
   height: auto;
-  padding-top: 20%;
-  padding: 5%;
+  padding: 5px 10px 20px 10px;
+  flex: 1 1 1;
+  min-width: 100;
 }
 
 .img-container-options:hover {
@@ -622,3 +657,34 @@ footer a {
 }
 
 
+/*
+.Image-content-prev {
+  position: absolute;
+  top: 50%;
+  width: 27px;
+  z-index: 1000;
+  left: 2%;
+  cursor: pointer;
+  color: transparent;
+  margin-top: -27px;
+}
+
+.Image-content-next {
+  height: 54px;
+  position: absolute;
+  top: 50%;
+  width: 27px;
+  z-index: 1000;
+  right: 2%;
+  cursor: pointer;
+  color: transparent;
+  margin-top: -27px;
+}
+
+
+.Image-content-prev:hover,
+.Image-content-next:hover {
+  opacity: 0.5;
+}
+
+/*
