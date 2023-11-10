@@ -71,6 +71,11 @@ a:hover {
   display: none;
 }
 
+#hamburger-nav-miguel{
+  display: none;
+}
+
+
 
 .hamburger-menu {
   position: relative;
