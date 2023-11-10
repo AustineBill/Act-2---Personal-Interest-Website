@@ -18,10 +18,197 @@
     </section>
 
     <section id="home_pic">
-        <div class = "Web-title"> WEFLEX  </div>
+        <nav id = "desktop-nav">
+            <div class = "Name"> WEFLEX </div>
+            <div>
+                <ul class ="nav-links">
+                    <li><a href = "#About"> About</a></li>
+                    <li><a href = "#Movies"> Top 20 Movies</a></li>
+                    <li><a href = "#Series"> Top 10 Series </a></li>
+                    <li><a href = "#whoIsWatching"> Choose Account</a></li>
+                    <li><a href = "#contact"> Contacts </a></li>
+                </ul>
+            </div>
+        </nav>   
+
+        <nav id="hamburger-nav">
+            <div class="Web-title   ">WEFLEX</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href = "#About"> About</a></li>
+                    <li><a href = "#Movies"> Top 20 Movies</a></li>
+                    <li><a href = "#Series"> Top 10 Series </a></li>
+                    <li><a href = "#whoIsWatching"> Choose Account</a></li>
+                    <li><a href = "#contact"> Contacts </a></li>
+                </div>
+            </div>
+        </nav>
+
             <button><a href = "#whoIsWatching" >GET STARTED</a></button>
     </section>
-    
+
+    <section id ="About">
+      <div class =" about-container">
+        <p>
+            Abput kemerut dhkwjkjhckljhcawddjakdhakjdhakjdhakjdhau
+            data-modal-idadada
+            frfrergdrg
+        </p>
+      </div>
+      <div class = "video-container">
+        <video width="700" height="500" autoplay muted>
+            <source src="Assets/About-Video.mp4" type="video/mp4">
+            <source src="Assets/About-Video.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <section id ="Movies">
+        <h1 class="title">TOP 20 RECOMMENDED MOVIES</h1>
+            <div class="content">
+                <img src="assets/shutter island.jpg" class="img-container-options" data-modal-id="myModal1">
+                <img src="assets/fight-club.jpg" class="img-container-options" data-modal-id="myModal2">
+                <img src="assets/deadpool.jpeg" class="img-container-options" data-modal-id="myModal3">
+                <img src="assets/lalaland.jpg" class="img-container-options" data-modal-id="myModal4">
+                <img src="assets/up.jpeg" class="img-container-options" data-modal-id="myModal5">
+            </div>
+
+            <div class="content">
+                <img src="assets/coraline.jpg" class="img-container-options" data-modal-id="myModal6">
+                
+            </div>
+
+            
+        
+            <!-- Modal 1 -->
+            <div id="myModal1" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal-id="myModal1">&times;</span>
+                    <h1 class="movie-title">Shutter Island</h1>
+                    <p class="movie-info">Release Year: 2010</p>
+                    <div class="ratings">
+                        <span>IMDb: 8.2</span>
+                        <span>2h 18m</span>
+                    </div>
+                    <p class="genre">Genre: Mystery, Thriller, Drama</p>
+                    <p class="cast">Director: Martin Scorsese</p>
+                    <p class="cast">Cast: Leonardo DiCaprio, Mark Ruffalo</p>
+                </div>
+            </div>
+        
+        
+            <!-- Modal 2 -->
+            <div id="myModal2" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal-id="myModal3">&times;</span>
+                    <h1 class="movie-title">Fight Club</h1>
+                    <p class="movie-info">Release Year: 1999</p>
+                    <div class="ratings">
+                        <span>IMDb: 8.8</span>
+                        <span>2h 19m</span>
+                    </div>
+                    <p class="genre">Genre: Drama</p>
+                    <p class="cast">Director: David Fincher</p>
+                    <p class="cast">Cast: Brad Pitt, Edward Norton</p>
+                </div>
+            </div>
+
+            <div id="myModal3" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal-id="myModal5">&times;</span>
+                    <h1 class="movie-title">Deadpool</h1>
+                    <p class="movie-info">Release Year: 2016</p>
+                    <div class="ratings">
+                        <span>IMDb: 8.0</span>
+                        <span>1h 48m</span>
+                    </div>
+                    <p class="genre">Genre: Action, Comedy</p>
+                    <p class="cast">Director: Tim Miller</p>
+                    <p class="cast">Cast: Ryan Reynolds, Morena Baccarin</p>
+                </div>
+            </div>
+
+            <div id="myModal4" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal-id="myModal4">&times;</span>
+                    <h1 class="movie-title">La La Land</h1>
+                    <p class="movie-info">Release Year: 2016</p>
+                    <div class="ratings">
+                        <span>IMDb: 8.0</span>
+                        <span>2h 8m</span>
+                    </div>
+                    <p class="genre">Genre: Musical, Romance</p>
+                    <p class="cast">Director: Damien Chazelle</p>
+                    <p class="cast">Cast: Ryan Gosling, Emma Stone</p>
+                </div>
+            </div>
+
+            <div id="myModal5" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal-id="myModal10">&times;</span>
+                    <h1 class="movie-title">Up</h1>
+                    <p class="movie-info">Release Year: 2009</p>
+                    <div class="ratings">
+                        <span>IMDb: 8.2</span>
+                        <span>1h 36m</span>
+                    </div>
+                    <p class="genre">Genre: Animation, Adventure, Comedy</p>
+                    <p class="cast">Directors: Pete Docter, Bob Peterson</p>
+                    <p class="cast">Voice Cast: Edward Asner, Jordan Nagai</p>
+                </div>
+            </div>
+
+            <div id="myModal6" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal-id="myModal7">&times;</span>
+                    <h1 class="movie-title">Coraline</h1>
+                    <p class="movie-info">Release Year: 2009</p>
+                    <div class="ratings">
+                        <span>IMDb: 7.7</span>
+                        <span>1h 40m</span>
+                    </div>
+                    <p class="genre">Genre: Animation, Fantasy</p>
+                    <p class="cast">Director: Henry Selick</p>
+                    <p class="cast">Cast: Dakota Fanning, Teri Hatcher</p>
+                </div>
+            </div>
+
+            <div id="myModal7" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal-id="myModal7">&times;</span>
+                    <h1 class="movie-title">Coraline</h1>
+                    <p class="movie-info">Release Year: 2009</p>
+                    <div class="ratings">
+                        <span>IMDb: 7.7</span>
+                        <span>1h 40m</span>
+                    </div>
+                    <p class="genre">Genre: Animation, Fantasy</p>
+                    <p class="cast">Director: Henry Selick</p>
+                    <p class="cast">Cast: Dakota Fanning, Teri Hatcher</p>
+                </div>
+            </div>
+        
+    </section>
+
+    <section id = "Series">
+        <h1 class="title">TOP 10 RECOMMENDED SERIES</h1>
+        <div class="content">
+            <img src="assets/peaky blinders.jpg" class="img-container-options" data-modal-id="myModal1">
+            <img src="assets/fight-club.jpg" class="img-container-options" data-modal-id="myModal2">
+                <img src="assets/deadpool.jpeg" class="img-container-options" data-modal-id="myModal3">
+                <img src="assets/lalaland.jpg" class="img-container-options" data-modal-id="myModal4">
+                <img src="assets/up.jpeg" class="img-container-options" data-modal-id="myModal5">
+            
+        </div>
+
+    </section>
+   
     <section>
         <div id="whoIsWatching">
             <div class="main-div">
@@ -42,12 +229,9 @@
             <div class = "Name"> Austine </div>
             <div>
                 <ul class ="nav-links">
-                    <li><a href = "#about"> About</a></li>
-                    <li><a href = "#Top5"> Top 5 Movies</a></li>
                     <li><a href = "#Interest"> Interest </a></li>
                     <li><a href = "#Hobbies"> Hobbies </a></li>
                     <li><a href = "#whoIsWatching"> Switch Account</a></li>
-                    <li><a href = "#contact"> Contacts </a></li>
                 </ul>
             </div>
         </nav>   
@@ -61,74 +245,16 @@
                     <span></span>
                 </div>
                 <div class="menu-links">
-                    <li><a href="#about" onclick="toggleMenu('austine')"> About</a></li>
-                    <li><a href="#Top-Austine" onclick="toggleMenu('austine')">Top 5 Movies</a></li>
                     <li><a href="#Interest" onclick="toggleMenu('austine')">Interest</a></li>
                     <li><a href="#Hobbies" onclick="toggleMenu('austine')">Hobbies</a></li>
                     <li><a href="#whoIsWatching" onclick="toggleMenu('austine')">Switch Account</a></li>
-                    <li><a href="#contact" onclick="toggleMenu('austine')">Contacts</a></li>
                 </div>
             </div>
         </nav>
 
-        <section>
-            <div class="content">
-                <img src="assets/shutter island.jpg" class="img-container-options" data-modal-id="myModal1">
-                <img src="assets/The exorcist.jpg" class="img-container-options" data-modal-id="myModal2">
-                <img src="assets/fight-club.jpg" class="img-container-options" data-modal-id="myModal3">
-            </div>
-        
-            <!-- Modal 1 -->
-            <div id="myModal1" class="modal">
-                <div class="modal-content">
-                    <span class="close" data-modal-id="myModal1">&times;</span>
-                    <h1 class="movie-title">Shutter Island</h1>
-                    <p class="movie-info">Release Year: 2010</p>
-                    <div class="ratings">
-                        <span>IMDb: 8.2</span>
-                        <span>2h 18m</span>
-                    </div>
-                    <p class="genre">Genre: Mystery, Thriller, Drama</p>
-                    <p class="cast">Director: Martin Scorsese</p>
-                    <p class="cast">Cast: Leonardo DiCaprio, Mark Ruffalo</p>
-                </div>
-            </div>
-        
-            <!-- Modal 2 -->
-            <div id="myModal2" class="modal">
-                <div class="modal-content">
-                    <span class="close" data-modal-id="myModal2">&times;</span>
-                    <h1 class="movie-title">The Exorcist</h1>
-                    <p class="movie-info">Release Year: 1973</p>
-                    <div class = "ratings">
-                        <span>IMDb: 8.0</span>
-                        <span>2h 2m</span>
-                    </div>
-                    <p class="genre">Genre: Horror</p>
-                    <p class="cast">Director: William Friedkin</p>
-                    <p class="cast">Cast: Ellen Burstyn, Max von Sydow</p>
-                </div>
-            </div>
-        
-            <!-- Modal 3 -->
-            <div id="myModal3" class="modal">
-                <div class="modal-content">
-                    <span class="close" data-modal-id="myModal3">&times;</span>
-                    <h1 class="movie-title">Fight Club</h1>
-                    <p class="movie-info">Release Year: 1999</p>
-                    <div class="ratings">
-                        <span>IMDb: 8.8</span>
-                        <span>2h 19m</span>
-                    </div>
-                    <p class="genre">Genre: Drama</p>
-                    <p class="cast">Director: David Fincher</p>
-                    <p class="cast">Cast: Brad Pitt, Edward Norton</p>
-                </div>
-            </div>
-        </section>
   
-        <section id ="Top-Austine"> 
-        <h1 class="title">TOP 3 RECOMMENDED MOVIES</h1>
+        <section id ="Interest"> 
+        <h1 class="title">Personal Interest and Hobbies</h1>
         <div class="content">
             <div class="image-container">
                 <img src="assets/shutter island.jpg" class="img-container" data-aos="fade-in" data-aos-once="false" data-aos-mirror="true">
