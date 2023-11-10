@@ -1,11 +1,14 @@
 # Act-2---Personal-Interest-Website
 
 Malic 
-- Personal Part
+- Personal Part - Hobbies and Interest
 - Introduction & Select Account
-- 3 Movies
+- 6 Movies Recommened
+- 1 Series Recommeded
 - Function Button
 - Responsive
+- Modal
+- Footer
 
 Jade 
 - Personal part
