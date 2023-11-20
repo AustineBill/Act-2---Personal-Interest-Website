@@ -1,140 +1,696 @@
-
-/* Introduction */
-
-const textElement = document.getElementById('intro-text');
-const text = 'WE FLEX';
-let index = 1;
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600&display=swap");
 
 
-function showNextLetter() {
-    if (index <= text.length) {
-        textElement.textContent = text.slice(0, index);
-        index++;
-        setTimeout(showNextLetter, 400);
-    } else {
-        // Show the login form when the animation is complete
-        const intro = document.getElementById('introduction');
-        intro.remove();;
-    }
+body {
+  margin: auto 0;
+  background-color: #000;
+ 
 }
 
-showNextLetter();
 
+/*Nav */
 
-/* Button to Read More Content */
-function toggleContent(button) {
-    const contentId = button.getAttribute("data-toggle");
-    const content = document.getElementById(contentId);
-    const containers = document.getElementById("text-container");
+nav,
+.nav-links {
+  display: flex;
+}
 
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+  width: 100%;
+  gap: 20rem;
+}
 
-    if (content.style.display === "none" || content.style.display === "") {
-        content.style.display = "block";
-        button.innerText = "Less";
+.nav-links  {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
   
-    } else {
-        content.style.display = "none";
-        /*containers.style.display = "block";  /*if you want to  on and off the content  */
-        button.innerText = "More";
-    }
+  
+}
+
+a{
+  color: rgb(253, 255, 255);
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: gray;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.Name {
+  font-size: 6rem;
+  font-weight: bold;
+  color: rgb(223, 6, 6);
+  font-family: "Bebas Neue", sans-serif;
 }
 
 
 
+/* Hamburger Menu */
 
-
-function toggleMenu(menuId) {
-    var menu = document.getElementById(menuId);
-    var icon = menu.querySelector('.hamburger-icon');
-    var links = menu.querySelector('.menu-links');
-
-    if (menu.style.display === 'none' || menu.style.display === '') {
-        icon.classList.toggle("open");
-        menu.classList.toggle("open");
-        links.classList.toggle("open");
-       
-    } else {
-        menu.style.display = 'none';
-        icon.classList.remove('open');
-        links.style.display = 'none';
-    }
+#hamburger-nav{
+  display: none;
 }
 
-// Add event listeners for each hamburger icon
-var Icon = document.getElementById('hamburger-nav').querySelector('.hamburger-icon');
-var austineIcon = document.getElementById('hamburger-nav-austine').querySelector('.hamburger-icon');
-var jadeIcon = document.getElementById('hamburger-nav-jade').querySelector('.hamburger-icon');
-var maviIcon = document.getElementById('hamburger-nav-mavi').querySelector('.hamburger-icon');
-var migsIcon = document.getElementById('hamburger-nav-miguel').querySelector('.hamburger-icon');
-
-Icon.addEventListener('click', function () {
-    toggleMenu('hamburger-nav');
-});
-
-austineIcon.addEventListener('click', function () {
-    toggleMenu('hamburger-nav-austine');
-});
-
-jadeIcon.addEventListener('click', function () {
-    toggleMenu('hamburger-nav-jade');
-});
-
-maviIcon.addEventListener('click', function () {
-    toggleMenu('hamburger-nav-mavi');
-});
-
-migsIcon.addEventListener('click', function () {
-    toggleMenu('hamburger-nav-miguel');
-});
-
-
-
-
-
-
-function openModal(modalId) {
-    document.getElementById(modalId).style.display = "block";
+#hamburger-nav-austine{
+  display: none;
 }
 
-// Function to close a modal
-function closeModal(modalId) {
-    document.getElementById(modalId).style.display = "none";
+#hamburger-nav-jade{
+  display: none;
+}
+
+#hamburger-nav-mavi{
+  display: none;
+}
+
+#hamburger-nav-miguel{
+  display: none;
 }
 
 
 
-// Get all modal buttons and set up event listeners
-var modalButtons = document.querySelectorAll(".img-container-options");
-modalButtons.forEach(function (button, index) {
-    var modalId = "myModal" + (index + 1);
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
 
-    button.onclick = function () {
-        openModal(modalId);
-    }
-});
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+  
+}
 
-// Get all close buttons and set up event listeners
-var closeButtons = document.querySelectorAll(".close");
-closeButtons.forEach(function (closeButton, index) {
-    var modalId = "myModal" + (index + 1);
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: rgb(219, 214, 214);
+  transition: all 0.3 ease-in-out;
+}
 
-    closeButton.onclick = function () {
-        closeModal(modalId);
-    }
-});
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
 
-// Function to close a modal when clicking outside
-window.onclick = function (event) {
-    if (event.target.classList.contains("modal")) {
-      event.target.style.display = "none";
-    }
-  };
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
 
 
 
+/*introduction*/
 
-	
+.intro-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.content-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: Bebas neue;
+}
+
+.intro-text {
+  font-size: 10rem;
+  color: red;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Starting Page */
+
+#home_pic {
+  width: auto;
+  height: 100vh; /* Set the height to 100vh for full viewport height */
+  display: flex;
+  background-image: url("Assets/Netflix Bg.png");
+  background-size: cover;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.Web-title {
+  font-size: 6rem;
+  font-weight: bold;
+  color: rgb(223, 6, 6);
+  justify-content: right;
+  font-family: "Bebas Neue";
+  padding-left: 15px;
+}
+
+#home_pic button {
+  background-color:red;
+  display: inline-block;
+  padding: 16px;
+  width: 220px;
+  border: none;
+  cursor: pointer;
+  font-size: 32px;
+  border-radius: 5px; 
+  text-align: center;
+  position: absolute;
+  transition: all 0.5s;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+#home_pic button:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+
+  transition: 0.5s;
+}
+
+#home_pic button:hover{
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+#home_pic button:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+
+#home_pic button a{
+color: #efebeb;
+font-family: "Bebas Neue", sans-serif;
+}
+
+/*Section */
+
+section {
+  /*max-height: 1000px;*/
+  height: auto;
+  padding-bottom: 20%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  min-height: fit-content;
+}
 
 
 
+/* About Section */
 
+#About {
+
+  height: 100vh;
+  background-color: #faf9f9;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  min-height: fit-content;
+  display: flex;
+}
+
+.video-container {
+  display: flex;
+  align-content: right;
+  justify-content: right;
+  padding: 100px 110px 10px 0px;
+
+}
+
+.about-container {
+  display: flex;
+  align-content: left;
+  justify-content: left;
+  padding: 150px 30px 10px 90px;
+
+}
+
+
+/* Choose Account*/
+#whoIsWatching {
+  width: 100vw;
+  height: 110vh;
+  background-color: #141414;
+}
+
+.logo-section {
+  width: 95vw;
+  margin: auto;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-section a img {
+  width: 8rem;
+  height: 8rem;
+  cursor: pointer;
+  margin-right: 30px;
+  outline: 1px solid;
+  outline-color: rgb(248, 244, 244);
+  text-shadow: none;
+  
+}
+
+.logo-section a img:hover {
+  transform: scale(1.1);
+  text-shadow: 1px 1px 2px #e9ecee;
+}
+
+.logo-section a p {
+  text-align: center;
+  color: white;
+  padding-right: 30px;
+  font-family: Arial;
+}
+
+.main-div {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.main-div h1 {
+  font-size: 5rem;
+  letter-spacing: 0.2rem;
+  font-size: 600;
+  padding-top: 5%;
+  font-family: sans-serif;
+}
+
+.section__text {
+  font-weight: 600;
+  font-size: 10px;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+.section__text__p1 {
+  font-size: 30px;
+  text-align: center;
+  color: rgb(249, 245, 245);
+}
+
+
+/*Personal Section Content*/ 
+
+.title {
+  font-size: 40px;
+  color: rgb(254, 254, 254);
+  text-align: center;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  font-family: 'Helvetica';
+
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header h1 {
+  text-align: left;
+  margin-right: 3rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 60px;
+  color: red;
+}
+
+.header h2 {
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 60px;
+  color: whitesmoke;
+}
+
+.text-container h3 {
+  color: rgb(255, 0, 0);
+  text-align: left;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 35px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  margin-top: 5px;
+  height: 100%;
+  font-family: helvetica;
+}
+
+.text-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 5px;
+  padding: 20px;
+  width: 400px;
+  height: auto;
+  text-align: justify;
+  text-justify:inter-word;
+
+}
+
+.text-container p {
+  color: white;
+}
+
+
+
+/* Image Container */
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover {
+  transform: scale(1.1);
+}
+
+.img-container {
+  width: 300px;
+  height: auto;
+  padding-top: 20%;
+}
+
+.img-container-options {
+  width: 200px;
+  height: auto;
+  padding: 5px 10px 20px 10px;
+  flex: 1 1 1;
+  min-width: 100;
+}
+
+.img-container-options:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+/* Modal */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #131313;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 70% /* Could be more or less, depending on screen size */
+}
+
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+/* Buttons */ 
+.Button-moreinfo {
+  background-color: rgba(243, 239, 240, 0.951);
+  color: rgb(24, 11, 11);
+  width: 8rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+}
+
+
+.movie-button {
+  text-decoration: none;
+  background-color: #202020;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s;
+}
+
+.movie-button:hover {
+  background-color: #f0e7e7;
+}
+
+/* More Content */
+.movie-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: rgb(242, 34, 34);
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.movie-info {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.ratings {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #e9ecee;
+}
+.genre {
+  margin-bottom: 10px;
+}
+.cast {
+  font-style: italic;
+}
+
+
+/* Contact Section */
+
+.contact-info-upper-container {
+  display: flex;
+  flex-wrap: wrap;
+  background: transparent;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.title-contact {
+  font-size: 60px;
+  color: rgb(246, 8, 8);
+  text-align: center;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  font-family: "Bebas Neue";
+  text-align: center;
+}
+
+.contact-info-container a {
+  color: rgb(13, 13, 13);
+  background-color: rgb(255, 248, 248);
+  border: 3px solid;
+  border-color: rgb(255, 255, 255);
+  width: 8rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+}
+
+.contact-info-container p {
+  text-align: center;
+  color: white;
+  padding-bottom: 50%;
+}
+
+.contact-img {
+  border-radius: 50%;
+  border: 5px solid;
+  border-color: rgb(255, 255, 255);
+  transform: scale(0.5);
+  overflow: hidden;
+  height: 250px;
+  width: 250px;
+}
+
+
+/* Corpin Movie Content */
+
+#anne,
+#papertown,
+#notebook {
+  display: none;
+}
+
+/* Austine Movie Content */
+
+#readyplayerone,
+#stepup,
+#exorcistContent,
+#silentvoice {
+  display: none;
+}
+
+/* Tuazon Movie Content */
+
+#loveatfirstsight,
+#mebeforeyou,
+#threeidiots {
+  display: none;
+}
+
+/* Viloria Movie Content */
+
+#Interstellar,
+#Hustle,
+#AManCalledOtto {
+  display: none;
+}
+
+
+/* Footer */
+
+footer {
+  height: 20vh;
+  margin: 0 1 rem;
+}
+
+footer p {
+  text-align: center;
+  color: #f0e7e7;
+}
+
+footer a {
+  text-align: center;
+  color: rgb(255, 255, 255)
+}
+
+
+/*
+.Image-content-prev {
+  position: absolute;
+  top: 50%;
+  width: 27px;
+  z-index: 1000;
+  left: 2%;
+  cursor: pointer;
+  color: transparent;
+  margin-top: -27px;
+}
+
+.Image-content-next {
+  height: 54px;
+  position: absolute;
+  top: 50%;
+  width: 27px;
+  z-index: 1000;
+  right: 2%;
+  cursor: pointer;
+  color: transparent;
+  margin-top: -27px;
+}
+
+
+.Image-content-prev:hover,
+.Image-content-next:hover {
+  opacity: 0.5;
+}
+
+/*
