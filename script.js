@@ -14,6 +14,52 @@ function showNextLetter() {
     }
 }
 showNextLetter();
+
+function toggleMenu(menuId) {
+    var menu = document.getElementById(menuId);
+    var icon = menu.querySelector('.hamburger-icon');
+    var links = menu.querySelector('.menu-links');
+
+    if (menu.style.display === 'none' || menu.style.display === '') {
+        icon.classList.toggle("open");
+        menu.classList.toggle("open");
+        links.classList.toggle("open");
+
+    } else {
+        menu.style.display = 'none';
+        icon.classList.remove('open');
+        links.style.display = 'none';
+    }
+}
+
+// Add event listeners for each hamburger icon
+var Icon = document.getElementById('hamburger-nav').querySelector('.hamburger-icon');
+var austineIcon = document.getElementById('hamburger-nav-austine').querySelector('.hamburger-icon');
+var jadeIcon = document.getElementById('hamburger-nav-jade').querySelector('.hamburger-icon');
+var maviIcon = document.getElementById('hamburger-nav-mavi').querySelector('.hamburger-icon');
+var migsIcon = document.getElementById('hamburger-nav-miguel').querySelector('.hamburger-icon');
+
+Icon.addEventListener('click', function () {
+    toggleMenu('hamburger-nav');
+});
+
+austineIcon.addEventListener('click', function () {
+    toggleMenu('hamburger-nav-austine');
+});
+
+jadeIcon.addEventListener('click', function () {
+    toggleMenu('hamburger-nav-jade');
+});
+
+maviIcon.addEventListener('click', function () {
+    toggleMenu('hamburger-nav-mavi');
+});
+
+migsIcon.addEventListener('click', function () {
+    toggleMenu('hamburger-nav-miguel');
+});
+
+
 /* Button to Read More Content */
 function toggleContent(button) {
     const contentId = button.getAttribute("data-toggle");
@@ -32,11 +78,25 @@ function toggleContent(button) {
 
 
 
-
-function closeModal(modalId) {
-    document.getElementById(modalId).style.display = "none";
+// Function to open a modal
+function openModal(modalId) {
+    var modal = document.getElementById(modalId);
+    if (modal) {
+        modal.style.display = "block";
+    } else {
+        console.error("Modal not found with ID: " + modalId);
+    }
 }
 
+// Function to close a modal
+function closeModal(modalId) {
+    var modal = document.getElementById(modalId);
+    if (modal) {
+        modal.style.display = "none";
+    } else {
+        console.error("Modal not found with ID: " + modalId);
+    }
+}
 
 
 // Get all modal buttons and set up event listeners
