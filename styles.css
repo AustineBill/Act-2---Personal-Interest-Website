@@ -76,7 +76,6 @@ a:hover {
 }
 
 
-
 .hamburger-menu {
   position: relative;
   display: inline-block;
@@ -103,7 +102,7 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: white;
+  background-color: rgb(117, 117, 117);
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -125,7 +124,7 @@ a:hover {
 }
 
 .menu-links.open {
-  max-height: 300px;
+  max-height: 400px;
 }
 
 .hamburger-icon.open span:first-child {
@@ -306,14 +305,18 @@ section {
 .logo-section {
   width: 95vw;
   margin: auto;
-  height: 7rem;
+  height: 10rem;
   display: flex;
   justify-content: center;
 }
 
+.logo-section a {
+  text-decoration: none;
+}
+
 .logo-section a img {
-  width: 8rem;
-  height: 8rem;
+  width: 10rem;
+  height: 10rem;
   cursor: pointer;
   margin-right: 30px;
   outline: 1px solid;
