@@ -410,8 +410,9 @@ section {
 
 .content {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start; /* Align items to the top */
   margin-top: 5px;
   height: 100%;
   font-family: helvetica;
@@ -667,6 +668,10 @@ footer a {
   color: rgb(255, 255, 255)
 }
 
+/* .hidden { this is to yung solo lang kapag  ni click
+  display: none;
+} */
+
 
 /*
 .Image-content-prev {
@@ -699,3 +704,4 @@ footer a {
 }
 
 /*
+
