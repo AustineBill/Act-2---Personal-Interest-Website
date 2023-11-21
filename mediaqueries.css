@@ -71,6 +71,17 @@
         font-size: 20px; /* Adjust font size for paragraph text on smaller screens */
     }
 
+    .content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .img-container-options{
+        width: 100px;
+        height: 200px; 
+    }
+
     /* Add more responsive styles as needed for elements at this screen size */
 
     .header h1 {
