@@ -44,25 +44,13 @@
         display: none;
     }
     
-    #hamburger-nav   {
+    #hamburger-nav, 
+    #hamburger-nav-austine, 
+    #hamburger-nav-jade, 
+    #hamburger-nav-mavi, 
+    #hamburger-nav-miguel {
         display: flex;
     }
-    #hamburger-nav-austine {
-        display: flex;
-    }
-
-    #hamburger-nav-jade  {
-        display: flex;
-    }
-
-    #hamburger-nav-mavi   {
-        display: flex;
-    }
-
-    #hamburger-nav-miguel  {
-        display: flex;
-    }
-    
 
     .logo-section a img {
         width: 6rem; /* Adjust logo image size */
