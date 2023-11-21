@@ -116,10 +116,24 @@ closeButtons.forEach(function (closeButton, index) {
         closeModal(modalId);
     }
 });
-s
+
 // Function to close a modal when clicking outside
 window.onclick = function (event) {
     if (event.target.classList.contains("modal")) {
       event.target.style.display = "none";
     }
-  };
+};
+
+// Function to select only choosen person
+function toggleSection(sectionId) {
+    var sections = document.getElementsByClassName('movie-section');
+
+    for (var i = 0; i < sections.length; i++) {
+        var sect = sections[i];
+        if (sect.id === sectionId) {
+            sect.style.display = (sect.style.display === "none" || sect.style.display === "") ? "block" : "none";
+        } else {
+            sect.style.display = "none";
+        }
+    }
+}

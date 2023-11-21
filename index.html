@@ -242,8 +242,7 @@
     <section id ="Series">
         <h1 class="title">TOP 10 RECOMMENDED SERIES</h1>
         <div class="content">
-            <img src="assets/peaky blinders.jpg" class="img-container-options" data-modal-id="Series1">
-               
+            <img src="assets/peaky blinders.jpg" class="img-container-options" data-modal-id="Series1">      
         </div>
         
         <div id="myModal21" class="modal">
@@ -274,7 +273,6 @@
                 <p class="cast">Cast: Cillian Murphy, Paul Anderson, Sophie Rundle</p>
             </div>
         </div>
-
     </section>
    
     <section>
@@ -282,17 +280,21 @@
             <div class="main-div">
                 <h1>Who's watching?</h1>
                 <div class="logo-section">
-                   <a href="#austine_movies"><img src="Assets/picsolo.jpg" alt="logo"><p>Austine</p></a>
-                    <a href="#jade_movies"><img src="Assets/dp.jpg" alt="logo"><p>Jade</p></a>
-                    <a href="#mavi_movies"><img src="Assets/tuazon.jpg" alt="logo"><p>Mavi</p></a>
-                    <a href="#miguel_movies"><img src="Assets/migz.jpg" alt="logo"><p>Miguel</p></a>
+                    <a href="#austine_movies"   onclick="toggleSection('austine_movies')" >
+                        <img src="Assets/picsolo.jpg" alt="logo"><p>Austine</p></a>
+                    <a href="#jade_movies" onclick="toggleSection('jade_movies')">
+                        <img src="Assets/dp.jpg" alt="logo"><p>Jade</p></a>
+                    <a href="#mavi_movies" onclick="toggleSection('mavi_movies')">
+                        <img src="Assets/tuazon.jpg" alt="logo"><p>Mavi</p></a>
+                    <a href="#miguel_movies" onclick="toggleSection('miguel_movies')">
+                        <img src="Assets/migz.jpg" alt="logo"><p>Miguel</p></a>
                 </div>
             </div>
         </div>
     </section>
 
 
-    <section id="austine_movies">
+    <section id="austine_movies"  class="movie-section hidden">
         <nav id = "desktop-nav">
             <div class = "Name"> Austine </div>
             <div>
@@ -489,7 +491,7 @@
 
           
 
-    <section id="mavi_movies">
+    <section id="mavi_movies" class=" ovie-section hidden">
         <nav id = "desktop-nav">
             <div class = "Name"> Mavi </div>
             <div>
@@ -774,7 +776,7 @@
        
      </section>
 
-    <section id="jade_movies">
+    <section id="jade_movies" class="movie-section hidden">
         <nav id = "desktop-nav">
             <div class = "Name"> Jade </div>
             <div>
