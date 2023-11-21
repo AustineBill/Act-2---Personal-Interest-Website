@@ -47,7 +47,7 @@
     #hamburger-nav   {
         display: flex;
     }
-    #hamburger-nav-austine   {
+    #hamburger-nav-austine {
         display: flex;
     }
 
@@ -59,9 +59,10 @@
         display: flex;
     }
 
-    #hamburger-nav-miguel   {
+    #hamburger-nav-miguel  {
         display: flex;
     }
+    
 
     .logo-section a img {
         width: 6rem; /* Adjust logo image size */
@@ -84,7 +85,6 @@
 
     /* Add more responsive styles as needed for elements at this screen size */
 
-    /* Example: */
     .header h1 {
         font-size: 30px; /* Reduce font size for h1 within the header */
         text-align: center; /* Adjust alignment for h1 within the header */
@@ -109,7 +109,8 @@
 
 @media screen and (max-width: 600px) {
 
- 
+    
+
     .intro-text {
         font-size: 6rem; /* Adjust the font size for the intro text */
     }
