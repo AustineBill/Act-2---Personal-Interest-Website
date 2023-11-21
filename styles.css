@@ -107,7 +107,7 @@ a:hover {
   width: fit-content;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.5 ease-in-out;
 }
 
 .menu-links a {
@@ -250,6 +250,8 @@ a:hover {
 #home_pic button a{
 color: #efebeb;
 font-family: "Bebas Neue", sans-serif;
+transform: none;
+text-decoration: none;
 }
 
 /*Section */
