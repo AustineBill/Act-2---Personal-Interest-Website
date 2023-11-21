@@ -44,22 +44,11 @@
         display: none;
     }
     
-    #hamburger-nav   {
-        display: flex;
-    }
-    #hamburger-nav-austine   {
-        display: flex;
-    }
-
-    #hamburger-nav-jade  {
-        display: flex;
-    }
-
-    #hamburger-nav-mavi   {
-        display: flex;
-    }
-
-    #hamburger-nav-miguel   {
+    #hamburger-nav, 
+    #hamburger-nav-austine, 
+    #hamburger-nav-jade, 
+    #hamburger-nav-mavi, 
+    #hamburger-nav-miguel {
         display: flex;
     }
 
@@ -82,9 +71,19 @@
         font-size: 20px; /* Adjust font size for paragraph text on smaller screens */
     }
 
+    .content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .img-container-options{
+        width: 100px;
+        height: 200px; 
+    }
+
     /* Add more responsive styles as needed for elements at this screen size */
 
-    /* Example: */
     .header h1 {
         font-size: 30px; /* Reduce font size for h1 within the header */
         text-align: center; /* Adjust alignment for h1 within the header */
@@ -109,7 +108,8 @@
 
 @media screen and (max-width: 600px) {
 
- 
+    
+
     .intro-text {
         font-size: 6rem; /* Adjust the font size for the intro text */
     }
