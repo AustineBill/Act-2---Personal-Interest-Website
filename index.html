@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
     <title>Personal Interest and Hobbies</title>
 </head>
 <body>
@@ -16,59 +17,91 @@
         </div>
     </section>
 
-    <section>
-        
-        <div id="whoIsWatching">
-            <div class="main-div">
-                <h1>Who's watching?</h1>
-                <div class="logo-section">
-                   <a href="#austine_movies"><img src="Assets/picsolo.jpg" alt="logo"><p>Austine</p></a>
-                    <a href="#jade_movies"><img src="Assets/dp.jpg" alt="logo"><p>Jade</p></a>
-                    <a href="#mavi_movies"><img src="Assets/tuazon.jpg" alt="logo"><p>Mavi</p></a>
-                    <a href="#miguel_movies"><img src="Assets/migz.jpg" alt="logo"><p>Miguel</p></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="austine_movies">
+    <section id="home_pic">
         <nav id = "desktop-nav">
-            <div class = "Name"> Austine </div>
+            <div class = "Name"> WEFLEX </div>
             <div>
                 <ul class ="nav-links">
-                    <li><a href = "#whoIsWatching">Choose Another Account</a></li>
+                    <li><a href = "#About"> About</a></li>
+                    <li><a href = "#Movies"> Top 20 Movies</a></li>
+                    <li><a href = "#Series"> Top 10 Series </a></li>
+                    <li><a href = "#whoIsWatching"> Choose Account</a></li>
                     <li><a href = "#contact"> Contacts </a></li>
                 </ul>
             </div>
-        </nav>
-        <h1 class="title">TOP 3 RECOMMENDED MOVIES</h1>
+        </nav>   
 
-        <div class="content">
-            <div class="image-container">
-                <img src="assets/shutter island.jpg" class="img-container" data-aos="fade-in" data-aos-once="false" data-aos-mirror="true">
+        <nav id="hamburger-nav">
+            <div class="Web-title   ">WEFLEX</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href = "#About"> About</a></li>
+                    <li><a href = "#Movies"> Top 20 Movies</a></li>
+                    <li><a href = "#Series"> Top 10 Series </a></li>
+                    <li><a href = "#whoIsWatching"> Choose Account</a></li>
+                    <li><a href = "#contact"> Contacts </a></li>
+                </div>
             </div>
-            <div class="text-container">
-                <span id="text-container">
-                <h3>Shutter Island</h3>
-                <p>Set in the 1950s, the story centers on U.S. 
-                    Marshal Teddy Daniels and his partner Chuck as they investigate the mysterious 
-                    disappearance of a patient from a secure mental institution on Shutter Island. 
-                    As they delve deeper into the case, Teddy confronts his own traumatic past and 
-                    questions the integrity of the institution's staff. The film is a suspenseful, 
-                    mind-bending journey with unexpected twists that explores the themes of sanity, deception, 
-                    and the unreliability of memory.
-                </p> 
-                <p> I am huge fan of Mystery and Thriller Movie. this movie give the total goosebumps and excitement.
-                    The plot has many unexpected twists and turns, making it a thrilling and engaging experience.
-                    the eerie atmosphere of the mental institution, creates a visually compelling backdrop. 
-                    this is the total package that i am looking for that is why i highy recomend it.
-                </p>
-                </span>
+        </nav>
 
-                <span id="container-more">
-                    <h1 class = "movie-title">Shutter Island</h1>
-                    <p class = "movie-info">Release Year: 2010</p>
+            <button><a href = "#whoIsWatching" >GET STARTED</a></button>
+    </section>
+
+    <section id ="About">
+      <div class =" about-container">
+        <p>
+            Abput kemerut dhkwjkjhckljhcawddjakdhakjdhakjdhakjdhau
+            data-modal-idadada
+            frfrergdrg
+            Dito si Jade About sa wE FLEX NATIN BAKIT ITO nAPILI NATIN
+        </p>
+      </div>
+      <div class = "video-container">
+        <video width="700" height="500" autoplay controls muted>
+            <source src="Assets/About-Video.mp4" type="video/mp4">
+            <source src="Assets/About-Video.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <section id ="Movies">
+        <h1 class="title">TOP 20 RECOMMENDED MOVIES</h1>
+            <div class="content">
+                <img src="assets/shutter island.jpg" class="img-container-options" data-modal-id="Movie1">
+                <img src="assets/fight-club.jpg" class="img-container-options" data-modal-id="Movie2">
+                <img src="assets/deadpool.jpeg" class="img-container-options" data-modal-id="Movie3">
+                <img src="assets/lalaland.jpg" class="img-container-options" data-modal-id="Movie4">
+                <img src="assets/up.jpeg" class="img-container-options" data-modal-id="Movie5">
+                <img src="assets/coraline.jpg" class="img-container-options" data-modal-id="Movie6">
+            </div>
+
+        
+            <!-- Modal 1 -->
+            <div id="myModal1" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal-id="Movie1">&times;</span>
+                    <h1 class="movie-title">Shutter Island</h1>
+                    <p>Set in the 1950s, the story centers on U.S. 
+                        Marshal Teddy Daniels and his partner Chuck as they investigate the mysterious 
+                        disappearance of a patient from a secure mental institution on Shutter Island. 
+                        As they delve deeper into the case, Teddy confronts his own traumatic past and 
+                        questions the integrity of the institution's staff. The film is a suspenseful, 
+                        mind-bending journey with unexpected twists that explores the themes of sanity, deception, 
+                        and the unreliability of memory.
+                    </p> 
+                    <p> I am huge fan of Mystery and Thriller Movie. this movie give the total goosebumps and excitement.
+                        The plot has many unexpected twists and turns, making it a thrilling and engaging experience.
+                        the eerie atmosphere of the mental institution, creates a visually compelling backdrop. 
+                        this is the total package that i am looking for that is why i highy recomend it.
+                    </p>
+    
+                    <p class="movie-info">Release Year: 2010</p>
                     <div class="ratings">
                         <span>IMDb: 8.2</span>
                         <span>2h 18m</span>
@@ -76,14 +109,304 @@
                     <p class="genre">Genre: Mystery, Thriller, Drama</p>
                     <p class="cast">Director: Martin Scorsese</p>
                     <p class="cast">Cast: Leonardo DiCaprio, Mark Ruffalo</p>
-                    </span><br>
+                </div>
+            </div>
+        
+        
+            <!-- Modal 2 -->
+            <div id="myModal2" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal-id="Movie2">&times;</span>
+                    <h1 class="movie-title">Fight Club</h1>
+                    <p>The movie follows an insomniac narrator who forms an underground fight club with the charismatic and 
+                        anarchic Tyler Durden. The club soon evolves into an anarchic project, leading to an underground revolution 
+                        against consumerism and societal norms. It's a dark and satirical exploration of masculinity, consumerism, 
+                        and identity, filled with twists and subversive commentary, making it a cult classic in contemporary cinema.
+                     </p>
+                     <p>"Fight Club" is my favorite movie because it explores thought-provoking themes, 
+                        features complex characters portrayed brilliantly, 
+                        and delivers a visually striking and unpredictable plot that keeps me engaged every time I watch it. 
+                        The film's social commentary and iconic quotes only add to its enduring appeal, 
+                        making it a timeless classic that resonates with me on many levels.
+                     </p>
+                     </span>
+                    <p class="movie-info">Release Year: 1999</p>
+                    <div class="ratings">
+                        <span>IMDb: 8.8</span>
+                        <span>2h 19m</span>
+                    </div>
+                    <p class="genre">Genre: Drama</p>
+                    <p class="cast">Director: David Fincher</p>
+                    <p class="cast">Cast: Brad Pitt, Edward Norton</p>
+                </div>
+            </div>
 
-                 <button class = "Button-moreinfo" id = "Button-moreinfo" onclick="toggleMenu()">More Info</button> 
+            <div id="myModal3" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal-id="Movie3">&times;</span>
+                    <h1 class="movie-title">Deadpool</h1>
+                    <p> a former special forces operative turned mercenary, who undergoes a rogue experiment to cure his cancer 
+                        but ends up with accelerated healing powers. 
+                        Adopting the alter ego Deadpool, he seeks revenge on those responsible for his transformation.
+                     </p>
+                     <p>tands out with its irreverent humor, fourth-wall-breaking antics, and the unconventional portrayal of a superhero. 
+                        The film's unique style, coupled with Ryan Reynolds' charismatic performance,
+                        makes it a refreshing and entertaining deviation from traditional superhero movies, earning its place as a favorite.
+                     </p>
+                    <p class="movie-info">Release Year: 2016</p>
+                    <div class="ratings">
+                        <span>IMDb: 8.0</span>
+                        <span>1h 48m</span>
+                    </div>
+                    <p class="genre">Genre: Action, Comedy</p>
+                    <p class="cast">Director: Tim Miller</p>
+                    <p class="cast">Cast: Ryan Reynolds, Morena Baccarin</p>
+                </div>
+            </div>
+
+            <div id="myModal4" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal-id="Movie4">&times;</span>
+                    <h1 class="movie-title">La La Land</h1>
+                    <p>follows the story of Mia, an aspiring actress, and Sebastian, a jazz musician, 
+                        as they navigate the challenges of pursuing their dreams in Los Angeles. 
+                        The film beautifully explores the themes of love, ambition, and the sacrifices 
+                        one makes in the pursuit of artistic passions.
+                     </p>
+                     <p>captivates me with its enchanting musical numbers, stunning cinematography, 
+                        and a heartfelt narrative that resonates with the dreams and struggles we all face. 
+                        The chemistry between the lead characters, combined with the film's homage to classic Hollywood, 
+                        creates a timeless and emotionally rich experience.
+                     </p>
+                    <p class="movie-info">Release Year: 2016</p>
+                    <div class="ratings">
+                        <span>IMDb: 8.0</span>
+                        <span>2h 8m</span>
+                    </div>
+                    <p class="genre">Genre: Musical, Romance</p>
+                    <p class="cast">Director: Damien Chazelle</p>
+                    <p class="cast">Cast: Ryan Gosling, Emma Stone</p>
+                </div>
+            </div>
+
+            <div id="myModal5" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal-id="Movie5">&times;</span>
+                    <span id="text-container" >    
+                    <h1 class="movie-title">Up</h1>
+                    <p>A widower who fulfills his dream of visiting South America by tying thousands of balloons to his house. 
+                        Unbeknownst to him, a young boy named Russell becomes an accidental stowaway on his journey, 
+                        leading to a heartwarming adventure.
+                     </p>
+                     <p>is a masterpiece that tugs at my heartstrings with its poignant storytelling and emotional depth. 
+                        The film beautifully captures themes of love, loss, and the importance of embracing new adventures. 
+                        The vibrant animation, memorable characters, and the touching relationship between Carl and Russell 
+                        make "Up" a timeless favorite that resonates on a deeply emotional level.
+                     </p>
+                    <p class="movie-info">Release Year: 2009</p>
+                    <div class="ratings">
+                        <span>IMDb: 8.2</span>
+                        <span>1h 36m</span>
+                    </div>
+                    <p class="genre">Genre: Animation, Adventure, Comedy</p>
+                    <p class="cast">Directors: Pete Docter, Bob Peterson</p>
+                    <p class="cast">Voice Cast: Edward Asner, Jordan Nagai</p>
+                </div>
+            </div>
+
+            <div id="myModal6" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal-id="Movie6">&times;</span>
+                    <h1 class="movie-title">Coraline</h1>
+                    <p>story of a young girl named Coraline Jones who discovers a parallel world that initially seems ideal but turns out to be more sinister. 
+                        As she confronts challenges and dangers, Coraline learns the value of appreciating her own life and family.
+                     </p>
+                     <p>Captivates me with its dark and whimsical animation, along with a compelling narrative 
+                        that delves into the importance of appreciating what we have. 
+                        The film's imaginative and slightly eerie atmosphere, combined with Coraline's journey of self-discovery, 
+                        makes it a unique and emotionally resonant favorite.
+                     </p>
+                    <p class="movie-info">Release Year: 2009</p>
+                    <div class="ratings">
+                        <span>IMDb: 7.7</span>
+                        <span>1h 40m</span>
+                    </div>
+                    <p class="genre">Genre: Animation, Fantasy</p>
+                    <p class="cast">Director: Henry Selick</p>
+                    <p class="cast">Cast: Dakota Fanning, Teri Hatcher</p>
+                </div>
+            </div>
+
+    </section>
+
+    <section id ="Series">
+        <h1 class="title">TOP 10 RECOMMENDED SERIES</h1>
+        <div class="content">
+            <img src="assets/peaky blinders.jpg" class="img-container-options" data-modal-id="Series1">      
+        </div>
+        
+        <div id="myModal21" class="modal">
+            <div class="modal-content">
+                <span class="close" data-modal-id="Series1">&times;</span>
+                <h1 class="movie-title">Peaky Blinders</h1>
+                <p>British crime drama television series set in the aftermath of World War I. 
+                    It follows the Shelby crime family, led by the cunning and ambitious Thomas Shelby. 
+                    The Peaky Blinders, named for sewing razor blades into the peaks of their flat caps, 
+                    navigate the treacherous world of organized crime in Birmingham, England. 
+                    The series explores themes of power, loyalty, and the impact of historical events on individuals and families.
+                 </p>
+                 <p>favorite for its compelling characters, intricate plotlines, and the gritty portrayal of post-war Birmingham. 
+                    The complex dynamics within the Shelby family, Thomas Shelby's strategic mind, 
+                    and the show's stylish period setting contribute to its appeal. 
+                    The series combines historical elements with a modern edge, creating a unique and immersive experience. 
+                    The combination of intense drama, strong character development, 
+                    and a distinctive atmosphere could make "Peaky Blinders" 
+                    a standout favorite in your collection of movies and TV shows.
+                 </p>
+                <p class="movie-info">Release Year: 2013-2022</p>
+                <div class="ratings">
+                    <span>IMDb: 8.8</span>
+                    <span>35h 9m</span>
+                </div>
+                <p class="genre">Genre: Crime, Drama</p>
+                <p class="cast">Director: Steven Knight</p>
+                <p class="cast">Cast: Cillian Murphy, Paul Anderson, Sophie Rundle</p>
+            </div>
+        </div>
+    </section>
+   
+    <section>
+        <div id="whoIsWatching">
+            <div class="main-div">
+                <h1>Who's watching?</h1>
+                <div class="logo-section">
+                    <a href="#austine_movies"   onclick="toggleSection('austine_movies')" >
+                        <img src="Assets/picsolo.jpg" alt="logo"><p>Austine</p></a>
+                    <a href="#jade_movies" onclick="toggleSection('jade_movies')">
+                        <img src="Assets/dp.jpg" alt="logo"><p>Jade</p></a>
+                    <a href="#mavi_movies" onclick="toggleSection('mavi_movies')">
+                        <img src="Assets/tuazon.jpg" alt="logo"><p>Mavi</p></a>
+                    <a href="#miguel_movies" onclick="toggleSection('miguel_movies')">
+                        <img src="Assets/migz.jpg" alt="logo"><p>Miguel</p></a>
                 </div>
             </div>
         </div>
-            
+    </section>
+
+
+    <section id="austine_movies"  class="movie-section hidden">
+        <nav id = "desktop-nav">
+            <div class = "Name"> Austine </div>
+            <div>
+                <ul class ="nav-links">
+                    <li><a href = "#Movies"> Top Movies </a></li>
+                    <li><a href = "#Series"> Top Series </a></li>
+                    <li><a href = "#Interest"> Interest </a></li>
+                    <li><a href = "#Hobbies"> Hobbies </a></li>
+                    <li><a href = "#whoIsWatching"> Switch Account</a></li>
+                </ul>
+            </div>
+        </nav>   
+
+        <nav id="hamburger-nav-austine">
+            <div class="Name">Austine</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu('austine')">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href= "#Movies"  onclick="toggleMenu('austine')"> Top Movies </a></li>
+                    <li><a href= "#Series" onclick="toggleMenu('austine')" > Top Series </a></li>
+                    <li><a href="#Interest" onclick="toggleMenu('austine')">Interest</a></li>
+                    <li><a href="#Hobbies" onclick="toggleMenu('austine')"> Hobbies</a></li>
+                    <li><a href="#whoIsWatching" onclick="toggleMenu('austine')">Switch Account</a></li>
+                </div>
+            </div>
+        </nav>
+
+  
+        <section id ="Interest"> 
+        <h1 class="title">Personal Interest</h1>
         <div class="content">
+            <div class="image-container">
+                <img src="assets/readyplayerone.jpg" class="img-container" data-aos="fade-in" data-aos-once="false" data-aos-mirror="true">
+            </div>
+            <div class="text-container">
+                <span id="text-container">
+                <h3>Ready Player One</h3>
+                <p>The film is set in 2045, where much of humanity uses the OASIS, a virtual reality simulation, to escape the real world.
+                    A teenage orphan finds clues to a contest that promises ownership of the OASIS to the winner, 
+                    and he and his allies try to complete it before an evil corporation can do so.
+                 </p> 
+                 <p> I am Gamer it interest me since i was a kid. it gives me excitement when ever i play games with my friends and 
+                     specially the communication and bonding that we share whe we play. 
+                     Many good thing happen when we play it such a wonderful journey. 
+                     Now the i am a student i still play online games to help my brain and enjoy things 
+                 </p>
+                </span>
+
+                <span id="readyplayerone">
+                    <h1 class = "movie-title">Ready Player One</h1>
+                    <p class = "movie-info">Release Year: 2018</p>
+                    <div class="ratings">
+                        <span>IMDb: 7.4</span>
+                        <span>2h 20m</span>
+                    </div>
+                    <p class="genre">Genre: Action, Adventure, Sci-fi</p>
+                    <p class="cast">Director: Steven Spielberg</p>
+                    <p class="cast">Cast: Tye Sheridan, Olivia Cooke, Ben Mendelsohn</p>
+                </span><br>
+                    <button class = "Button-moreinfo"  
+                    data-toggle="readyplayerone" 
+                    onclick="toggleContent(this)">More</button> 
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="image-container">
+                <img src="assets/stepup.jpg" class="img-container" data-aos="fade-in" data-aos-once="false" data-aos-mirror="true">
+            </div>
+            <div class="text-container">
+                <span id="text-container">
+                <h3>Step Up 2</h3>
+                <p>The film is set in 2045, where much of humanity uses the OASIS, a virtual reality simulation, to escape the real world.
+                   A teenage orphan finds clues to a contest that promises ownership of the OASIS to the winner, 
+                   and he and his allies try to complete it before an evil corporation can do so.
+                </p> 
+                <p> I am Gamer it interest me since i was a kid. it gives me excitement when ever i play games with my friends and 
+                    specially the communication and bonding that we share whe we play. 
+                    Many good thing happen when we play it such a wonderful journey. 
+                    Now the i am a student i still play online games to help my brain and enjoy things 
+                </p>
+                </span>
+
+                <span id="stepup">
+                    <h1 class = "movie-title">Step-Up 2</h1>
+                    <p class = "movie-info">Release Year: 2008</p>
+                    <div class="ratings">
+                        <span>IMDb: 6.2</span>
+                        <span>1h 38m</span>
+                    </div>
+                    <p class="genre">Genre: Drama, Music, Romance</p>
+                    <p class="cast">Director: Jon M. Chu</p>
+                    <p class="cast">Cast: Robert Hoffman, Briana Evigan, Cassie Ventura</p>
+                    </span><br>
+                    <button class = "Button-moreinfo"  
+                    data-toggle="stepup" 
+                    onclick="toggleContent(this)">More</button> 
+                </div>
+            </div>
+        </div>
+    </section> 
+        
+       
+    <section id ="Hobbies"> 
+        <h1 class="title">Hobbies</h1>
+        <div class="content" >
             <div class="image-container">
                 <img src="assets/The exorcist.jpg" class="img-container" data-aos="fade-in" data-aos-once="false" data-aos-mirror="true">
             </div>
@@ -104,7 +427,7 @@
                 </p>
                 </span>
 
-                    <span id="container-more">
+                    <span id="exorcistContent">
                     <h1 class = "movie-title">The Exorcist</h1>
                     <p class = "movie-info">Release Year: 1973</p>
                     <div class="ratings">
@@ -115,66 +438,91 @@
                     <p class="cast">Director: William Friedkin</p>
                     <p class="cast">Cast: Linda Blair, Ellen Burnstyn, Max von Sydow</p>
                 </span><br>
-
-                    <button class = "Button-moreinfo"  id = "Button-moreinfo" onclick="toggleMenu()" >More Info</button>
+                <button class = "Button-moreinfo"  
+                data-toggle="exorcistContent" 
+                onclick="toggleContent(this)">More</button> 
                 </div>
             </div>
         </div>
 
-        <div class="content">
+        <div class="content" >
             <div class="image-container">
-                <img src="assets/fight-club.jpg" class="img-container" data-aos="fade-in" data-aos-once="false" data-aos-mirror="true">
+                <img src="assets/silent voice.jpg" class="img-container" data-aos="fade-in" data-aos-once="false" data-aos-mirror="true">
             </div>
             <div class="text-container">
-                <span id="text-container">
-                <h3>Fight Club</h3>
-                <p>The movie follows an insomniac narrator who forms an underground fight club with the charismatic and anarchic Tyler Durden. 
-                   The club soon evolves into an anarchic project, leading to an underground revolution against consumerism and societal norms. 
-                   It's a dark and satirical exploration of masculinity, consumerism, and identity, filled with twists and subversive commentary, 
-                   making it a cult classic in contemporary cinema.
+                <span id="text-container" >
+                <h3>A Silent Voice</h3>
+                <p>The film covers elements of coming of age and psychological drama, dealing with themes of bullying, 
+                    disability, forgiveness, mental health, suicide, and friendship of opposite sexes. 
+                    It follows the story of a former bully turned social outcast, 
+                    who decides to reconnect and befriend the deaf girl he had bullied years prior.
                 </p>
-                <p>"Fight Club" is my favorite movie because it explores thought-provoking themes, 
-                   features complex characters portrayed brilliantly, 
-                   and delivers a visually striking and unpredictable plot that keeps me engaged every time I watch it. 
-                   The film's social commentary and iconic quotes only add to its enduring appeal, 
-                   making it a timeless classic that resonates with me on many levels.
+                <p>
+                    "A Silent Voice" is a profound and emotionally resonant film that holds a special place in my heart. 
+                    The story revolves around the complexities of human relationships, empathy, and redemption. 
+                    The film beautifully tackles themes of bullying, forgiveness, and the power of communication. 
+                    The character development and the nuanced exploration of the characters' struggles make it a deeply moving experience. 
+                    The animation is visually stunning, capturing the emotions and subtleties of the narrative. 
+                    "A Silent Voice" has the ability to evoke empathy and introspection, 
+                    making it not just a movie but a powerful journey that stays with me long after the credits roll. It's more than a film; 
+                    it's a poignant reflection on the human experience and the possibility of redemption and growth."
                 </p>
                 </span>
 
-                    <span id="container-more">
+                    <span id="silentvoice">
                     <h1 class = "movie-title">Fight Club</h1>
-                    <p class = "movie-info">Release Year: 1999</p>
+                    <p class = "movie-info">Release Year: 2016-2017</p>
                     <div class="ratings">
-                        <span>IMDb: 8.8</span>
-                        <span>2h 19m</span>
+                        <span>IMDb: 8.1</span>
+                        <span>2h 10m</span>
                     </div>
-                    <p class="genre">Genre: Mystery, Action</p>
-                    <p class="cast">Director:David Fincher</p>
-                    <p class="cast">Cast: Edward Norton and Brad Pitt</p>
+                    <p class="genre">Genre: Animation, Drama</p>
+                    <p class="cast">Director: Naoko Yamada</p>
+                    <p class="cast">Cast: Miyu Irino, Saori Hayami, Aoi Yûki</p>
                 </span><br>
-                    <button class = "Button-moreinfo"  id = "Button-moreinfo" onclick="toggleMenu()" >More Info</button>      
+                    <button class = "Button-moreinfo"  
+                            data-toggle="silentvoice" 
+                            onclick="toggleContent(this)">More</button>     
                 </div>
             </div>
         </div>
-    </section>
+     </section>
     
 
           
 
-    <section id="mavi_movies">
+    <section id="mavi_movies" class=" ovie-section hidden">
         <nav id = "desktop-nav">
             <div class = "Name"> Mavi </div>
             <div>
                 <ul class ="nav-links">
-                    <li><a href = "#whoIsWatching">Choose Another Account</a></li>
-                    <li><a href = "#contact"> Contacts </a></li>
+                    <li><a href = "#Top5"> Top 20 Movies</a></li>
+                    <li><a href = "#Interest"> Interest </a></li>
+                    <li><a href = "#Mavi_Hobbies"> Hobbies </a></li>
+                    <li><a href = "#whoIsWatching"> Switch Account</a></li>
                 </ul>
             </div>
         </nav>
-        <h1 class="title">TOP 3 RECOMMENDED MOVIES</h1>
 
-        
-      
+        <nav id="hamburger-nav-mavi">
+            <div class="Name">Mavi</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu('mavi')">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#Top5-Mavi" onclick="toggleMenu('mavi')">Top 5 Movies</a></li>
+                    <li><a href="#Interest" onclick="toggleMenu('mavi')">Interest</a></li>
+                    <li><a href="#Mavi_Hobbies" onclick="toggleMenu('mavi')">Hobbies</a></li>
+                    <li><a href="#whoIsWatching" onclick="toggleMenu('mavi')">Switch Account</a></li>
+                </div>
+            </div>
+        </nav>
+
+        <h1 class="Top5-Mavi">TOP 5 RECOMMENDED MOVIES</h1>
+
         <div class="content">
             <div class="image-container">
                 <img src="assets/love.png" class="img-container" data-aos="fade-in" data-aos-once="false" data-aos-mirror="true">
@@ -194,7 +542,7 @@
                     </p>
                 </span>
 
-                    <span id="container-more">
+                    <span id="loveatfirstsight">
                     <h1 class = "movie-title">LOVE AT FIRST SIGHT</h1>
                     <p class = "movie-info">Release Year: 2023</p>
                     <div class="ratings">
@@ -204,8 +552,10 @@
                     <p class="genre">Genre: Romantic, Drama</p>
                     <p class="cast">Cast: Haley Lu Richardson, Ben Hardy, Jameela jamil</p>
                     </span><br>
-
-                <button class = "Button-moreinfo"  id = "Button-moreinfo" onclick="toggleMenu()" >More Info</button> 
+                    <button class = "Button-moreinfo"  
+                    data-toggle="loveatfirstsight" 
+                    onclick="toggleContent(this)">More</button>
+                
                 </div>
             </div>
         </div>
@@ -229,7 +579,7 @@
                     </p>
                 </span>
 
-                    <span id="container-more">
+                    <span id="mebeforeyou">
                     <h1 class = "movie-title">ME BEFORE YOU</h1>
                     <p class="movie-info">Release Year: 2016</p>
                     <div class="ratings">
@@ -238,9 +588,11 @@
                     </div>
                     <p class="genre">Genre: Romantic, Drama</p>
                     <p class="cast">Cast: Sam Claflin, Emilia Clarke, Matthew Lewis</p>
-                </span><br>
-
-                    <button class = "Button-moreinfo"  id = "Button-moreinfo" onclick="toggleMenu()" >More Info</button>
+                    </span><br>
+                    <button class = "Button-moreinfo"  
+                    data-toggle="mebeforeyou" 
+                    onclick="toggleContent(this)">More</button>
+                
                 </div>
             </div>
         </div>
@@ -262,7 +614,7 @@
                     </p>
                 </span>
 
-                    <span id="container-more">
+                    <span id="threeidiots">
                     <h1 class = "movie-title">Three Idiots</h1>
                     <p class = "movie-info" >Release Year: 2009</p>
                     <div class="ratings">
@@ -271,30 +623,200 @@
                     </div>
                     <p class="genre">Genre: Comedy, Drama</p>
                     <p class="cast">Cast: Aamir Khan,R. Madhavan, Sharman Joshi</p>
-                </span><br>
+                    </span><br>
+                    <button class = "Button-moreinfo"  
+                    data-toggle="threeidiots" 
+                    onclick="toggleContent(this)">More</button>
+                
+                </div>
+            </div>
+        </div>
 
-                    <button class = "Button-moreinfo"  id = "Button-moreinfo" onclick="toggleMenu()">More Info</button>      
+        <div class="content">
+            <div class="image-container">
+                <img src="assets/matilda.png" class="img-container" data-aos="fade-in" data-aos-once="false" data-aos-mirror="true">
+            </div>
+            <div class="text-container">
+                <span id="text-container">
+                <h3>MATILDA</h3>
+                <p>A girl gifted with a keen intellect and psychic powers uses both to deal with her crude, distant family and free her kind teacher 
+                    from their sadistic headmistress.
+                </p>
+               
+                    <p>"Matilda" provides a fictional lens through which real-life challenges and growth can be understood. The themes of discovering one's 
+                        strengths, making positive choices, and infusing playfulness into difficult situations are applicable to various personal journeys. 
+                        The narrative encourages individuals to explore their potential, navigate challenges creatively, and contribute positively to their 
+                        own lives and the world around them.
+                    </p>
+                </span>
+
+                    <span id="matilda">
+                    <h1 class = "movie-title">Matilda</h1>
+                    <p class = "movie-info" >Release Year: 1996</p>
+                    <div class="ratings">
+                        <span>IMDb: 8.4</span>
+                        <span> 100%</span>
+                    </div>
+                    <p class="genre">Genre: Family and kids, Comedy </p>
+                    <p class="cast">Danny DeVito · Mr. Wormwood ; Rhea Perlman · Mrs. Wormwood ; Mara Wilson</p>
+                    </span><br>
+                    <button class = "Button-moreinfo"  
+                    data-toggle="matilda" 
+                    onclick="toggleContent(this)">More</button>
+                
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="image-container">
+                <img src="assets/no scape.png" class="img-container" data-aos="fade-in" data-aos-once="false" data-aos-mirror="true">
+            </div>
+            <div class="text-container">
+                <span id="text-container">
+                <h3>NO SCAPE</h3>
+                <p>American businessman Jack Dwyer (Owen Wilson), wife Annie and their two young daughters arrive in Southeast Asia to begin a new life. 
+                    As his company plans to improve the region's water quality, the family quickly learns that they're right in the middle of a political 
+                    uprising. Armed rebels attack the hotel where they're staying, ordered to kill any foreigners that they encounter. Amid utter chaos, 
+                    Jack must find a way to save himself and his loved ones from the violence erupting all around them.
+                </p>
+               
+                    <p>The urgency to protect loved ones in the midst of violence emphasizes the theme of family as a priority. This can be seen as a reminder 
+                        that, in times of crisis, the bonds and support within a family become paramount. It underscores the idea that, even in the most challenging 
+                        situations, ensuring the safety and well-being of family members should be a central concern. The storyline also touches on the geopolitical 
+                        aspects of the region, where a seemingly ordinary family becomes unwittingly entangled in a complex political situation. This can serve as a 
+                        reminder for individuals to be aware of global events and the potential impact these events can have on their lives, even when they are 
+                        pursuing personal or professional goals.
+                    </p>
+                </span>
+
+                    <span id="noscape">
+                    <h1 class = "movie-title">No Scape</h1>
+                    <p class = "movie-info" >Release Year: 2015</p>
+                    <div class="ratings">
+                        <span>IMDb: 6.7</span>
+                        <span> 89%</span>
+                    </div>
+                    <p class="genre">Genre: Family, Suspense, Action, Crime Fiction </p>
+                    <p class="cast">Mitchel Litvak; David Lancaster; Drew Dowdle · Owen Wilson · Lake Bell · Sterling Jerins; Claire Geare; Pierce Brosnan · Léo Hinstin.</p>
+                    </span><br>
+                    <button class = "Button-moreinfo"  
+                    data-toggle="noscape" 
+                    onclick="toggleContent(this)">More</button>
+                
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="jade_movies">
+    <section id ="Mavi_Hobbies"> 
+        <h1 class="title">HOBBIES</h1>
+        <div class="content" >
+            <div class="image-container">
+                <img src="assets/badminton.png" class="img-container" data-aos="fade-in" data-aos-once="false" data-aos-mirror="true">
+            </div>
+            <div class="text-container">
+                <span id="text-container">
+                <h3>PLAYING BADMINTON</h3>
+                <p> Engaging in sports like badminton is excellent for physical health, promoting cardiovascular fitness, agility, 
+                    and coordination. It's also a social activity if you play with others, providing opportunities for teamwork and friendly competition.
+                    Regularly participating in badminton from high school to college indicates discipline and dedication. Sports, especially when pursued 
+                    over an extended period, require commitment and the ability to balance training with academic responsibilities. If you've played badminton 
+                    in a team setting, you may have experienced the dynamics of teamwork and collaboration. These experiences can contribute to the development 
+                    of interpersonal skills, leadership qualities, and the ability to work effectively with others towards a common goal.
+                </p>
+                </span>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="content" >
+            <div class="image-container">
+                <img src="assets/CODM.png" class="img-container" data-aos="fade-in" data-aos-once="false" data-aos-mirror="true">
+            </div>
+            <div class="text-container">
+                <span id="text-container">
+                <h3>CALL OF DUTY MOBILE</h3>
+                <p> Engaging in the world of Call of Duty Mobile has become more than just a hobby for me; it's a dynamic and immersive 
+                    experience that combines strategy, quick thinking, and a passion for competitive gaming. As I navigate through virtual 
+                    battlegrounds, each match becomes an adrenaline-fueled challenge, demanding not only precision and reflexes but also 
+                    effective teamwork and communication. Whether it's the thrill of a well-executed strategy, the satisfaction of a hard-fought 
+                    victory, or the camaraderie with fellow players, Call of Duty Mobile offers a multifaceted and constantly evolving gaming 
+                    environment. It's more than just a pastime; it's a digital realm where I can test my skills, connect with others, and enjoy 
+                    the ever-evolving landscape of virtual warfare.
+                </p>
+                </span>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="content" >
+            <div class="image-container">
+                <img src="assets/crochet.png" class="img-container" data-aos="fade-in" data-aos-once="false" data-aos-mirror="true">
+            </div>
+            <div class="text-container">
+                <span id="text-container">
+                <h3>CROCHET</h3>
+                <p> Crocheting has become my cherished pastime, weaving together threads of creativity and relaxation. With a hook in hand, I delve into 
+                    the rhythmic dance of stitches, transforming strands of yarn into beautiful, handcrafted creations. This hobby is a meditative journey, 
+                    allowing me to unwind and find solace in the repetitive yet soothing motions. From cozy blankets to intricate designs, each project is 
+                    a unique expression of my imagination and skill. Crocheting transcends the mere act of crafting; it's a therapeutic escape that yields 
+                    tangible, heartfelt results. As I navigate through patterns and color palettes, I discover not only the joy of creating but also the 
+                    satisfaction of gifting handmade warmth and beauty to others. Crocheting has become more than a hobby; it's a delightful and meaningful 
+                    artistic endeavor that enriches both my quiet moments and the lives of those who receive my handmade treasures.
+                </p>
+                </span>
+
+                </div>
+            </div>
+        </div>
+
+       
+     </section>
+
+    <section id="jade_movies" class="movie-section hidden">
         <nav id = "desktop-nav">
-            <div class = "Name"> jade </div>
+            <div class = "Name"> Jade </div>
             <div>
                 <ul class ="nav-links">
-                    <li><a href = "#whoIsWatching">Choose Another Account</a></li>
+                    <li><a href = "#about"> About</a></li>
+                    <li><a href = "#Top5"> Top 5 Movies</a></li>
+                    <li><a href = "#Interest"> Interest </a></li>
+                    <li><a href = "#Hobbies"> Hobbies </a></li>
+                    <li><a href = "#whoIsWatching">Switch Account</a></li>
                     <li><a href = "#contact"> Contacts </a></li>
                 </ul>
             </div>
         </nav>
+
+        <nav id="hamburger-nav-jade">
+            <div class="Name">Jade</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu('jade')">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu('jade')">About</a></li>
+                    <li><a href="#Top5" onclick="toggleMenu('jade')">Top 5 Movies</a></li>
+                    <li><a href="#Interest" onclick="toggleMenu('jade')">Interest</a></li>
+                    <li><a href="#Hobbies" onclick="toggleMenu('jade')">Hobbies</a></li>
+                    <li><a href="#whoIsWatching" onclick="toggleMenu('jade')">Switch Account</a></li>
+                    <li><a href="#contact" onclick="toggleMenu('jade')">Contacts</a></li>
+                </div>
+            </div>
+        </nav>
+
+        
         <h1 class="title">TOP 3 RECOMMENDED MOVIES</h1>
 
     
         <div class="content">
             <div class="image-container">
-                <img src="assets/love.png" class="img-container" data-aos="fade-in" data-aos-once="false" data-aos-mirror="true">
+                <img src="assets/anne with an e.jpg" class="img-container" data-aos="fade-in" data-aos-once="false" data-aos-mirror="true">
             </div>
             <div class="text-container">
                 <span id="text-container">
@@ -316,8 +838,7 @@
                     stunning visuals make it a captivating and inspiring series that I can't get enough of. 
                 </p>
                 </span>
-
-                    <span id="container-more">
+                    <span id="anne">
                     <h1 class = "movie-title">Anne with an E</h1>
                     <p class = "movie-info">Release Year: 2017-2019</p>
                     <div class="ratings">
@@ -328,12 +849,270 @@
                     <p class="cast">Director: Moira Walley-Beckett</p>
                     <p class="cast">Cast: Amybeth McNulty, Geraldine James, R.H. Thomson</p>
                     </span><br>
+                    <button class = "Button-moreinfo"  
+                    data-toggle="anne" 
+                    onclick="toggleContent(this)">More</button> 
+                </div>
+            </div>
+        </div>
 
-                <button class = "Button-moreinfo"  id = "Button-moreinfo" onclick="toggleMenu()" >More Info</button> 
+        <div class="content">
+            <div class="image-container">
+                <img src="assets/paper towns.jpg" class="img-container" data-aos="fade-in" data-aos-once="false" data-aos-mirror="true">
+            </div>
+            <div class="text-container">
+                <span id="text-container">
+                <h3>Paper Towns</h3>
+                <p>A high school student who becomes infatuated with his enigmatic neighbor, 
+                    Margo Roth Spiegelman. After she mysteriously disappears, Quentin embarks on a journey to find her, 
+                    leading to self-discovery and a deeper understanding of the complexities of human relationships.
+                </p>
+                
+                <p>I love "Paper Towns" for its insightful exploration of identity and human nature. The author, 
+                    John Green, is one of my favorites due to his ability to blend humor and profound insights. 
+                    The adventure, relatable characters, and the way he crafts genuine, 
+                    multi-dimensional personalities make this book a standout in contemporary young adult literature. 
+                    It's a brilliant blend of wit, wisdom, and relatability that keeps me coming back for more.
+                </p>
+                </span>
+                    <span id="papertown">
+                    <h1 class = "movie-title">Paper Towns</h1>
+                    <p class = "movie-info">Release Year: 2015</p>
+                    <div class="ratings">
+                        <span>IMDb: 6.2</span>
+                        <span>1h 49m</span>
+                    </div>
+                    <p class="genre">Genre: Adventure, Comedy, Drama</p>
+                    <p class="cast">Director: Jake Schreier</p>
+                    <p class="cast">Cast: Nat Wolff, Cara Delevingne, Austin Abrams</p>
+                    </span><br>
+                    <button class = "Button-moreinfo"  
+                    data-toggle="papertown" 
+                    onclick="toggleContent(this)">More</button> 
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="image-container">
+                <img src="assets/the notebook.jpg" class="img-container" data-aos="fade-in" data-aos-once="false" data-aos-mirror="true">
+            </div>
+            <div class="text-container">
+                <span id="text-container">
+                <h3>The Notebook</h3>
+                <p>A high school student who becomes infatuated with his enigmatic neighbor, 
+                    Margo Roth Spiegelman. After she mysteriously disappears, Quentin embarks on a journey to find her, 
+                    leading to self-discovery and a deeper understanding of the complexities of human relationships.
+                </p>
+                
+                <p>For a several reasons, I am into the movie "The Notebook", 
+                   because first the film's portrayal of Noah and Allie's enduring love is both heartwarming and emotionally compelling. 
+                   Their love story, which transcends time and adversity, resonates deeply with my romantic sensibilities. 
+                   The picturesque Southern setting, with its lush landscapes and the charming old plantation house, 
+                   provides a visually stunning backdrop that enhances the story's romantic atmosphere. 
+                   It's a feast for the eyes and adds to the overall allure of the film. Beyond the love story, 
+                   "The Notebook" delves into the significance of memory and the enduring power of love, 
+                   which is both touching and thought-provoking. It serves as a reminder to cherish our memories and fight for love, 
+                   even in the face of adversity.
+                </p>
+                </span>
+                    <span id="notebook">
+                    <h1 class = "movie-title">The Notebook</h1>
+                    <p class = "movie-info">Release Year: 2004</p>
+                    <div class="ratings">
+                        <span>IMDb: 7.8</span>
+                        <span>2h 3m</span>
+                    </div>
+                    <p class="genre">Genre: Romance, Drama</p>
+                    <p class="cast">Director: Nick Cassavetesr</p>
+                    <p class="cast">Cast: Gena Rowlands, James Garner, Rachel McAdams</p>
+                    </span><br>
+                    <button class = "Button-moreinfo"  
+                    data-toggle="notebook" 
+                    onclick="toggleContent(this)">More</button> 
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="miguel_movies">
+        <nav id = "desktop-nav">
+            <div class = "Name"> Miguel </div>
+            <div>
+                <ul class ="nav-links">
+                    <li><a href = "#about"> About</a></li>
+                    <li><a href = "#Top5"> Top 5 Movies</a></li>
+                    <li><a href = "#Interest"> Interest </a></li>
+                    <li><a href = "#Hobbies"> Hobbies </a></li>
+                    <li><a href = "#whoIsWatching">Switch Account</a></li>
+                    <li><a href = "#contact"> Contacts </a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <nav id="hamburger-nav-miguel">
+            <div class="Name"> Miguel</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu('miguel')">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu('miguel')">About</a></li>
+                    <li><a href="#Top5-Mavi" onclick="toggleMenu('miguel')">Top 5 Movies</a></li>
+                    <li><a href="#Interest" onclick="toggleMenu('miguel')">Interest</a></li>
+                    <li><a href="#Hobbies" onclick="toggleMenu('miguel')">Hobbies</a></li>
+                    <li><a href="#whoIsWatching" onclick="toggleMenu('miguel')">Switch Account</a></li>
+                    <li><a href="#contact" onclick="toggleMenu('miguel')">Contacts</a></li>
+                </div>
+            </div>
+        </nav>
+
+        <h1 class="title">TOP 3 RECOMMENDED MOVIES</h1>
+
+        <div class="content">
+            <div class="image-container">
+                <img src="Assets/Interstellar-2014.jpg" class="img-container" data-aos="fade-in" data-aos-once="false" data-aos-mirror="true">
+            </div>
+            <div class="text-container">
+                <span id="text-container">
+                    <h3>Interstellar</h3>
+                    <p>
+                        "Interstellar is about Earth's last chance to locate a habitable planet 
+                         before the human race becomes extinct due to a lack of resources. 
+                         Cooper (Matthew McConaughey) is the film's protagonist, a former NASA 
+                         pilot entrusted with leading a mission through a wormhole to 
+                         find a livable planet in another galaxy.</p>
+                    <p>In my personal life, it applies with the idea of courage and sacrifice
+                        Aren't we all do that. we sacrifice for people we cherish and love.
+                    </p>
+                </span>
+                <span id="Interstellar">
+                    <h1 class = "movie-title">Interstellar</h1>
+                    <p class = "movie-info">Release Year: 2014</p>
+                    <div class="ratings">
+                        <span>IMDb: 8.7</span>
+                        <span> 87%</span>
+                    </div>
+                    <p class="genre">Genre: adventure, drama, sci-fi</p>
+                    <p class="cast">Cast: Matthew McConaughey, Anne Hathaway, Timothée Chalamet</p>
+                </span>
+                <button class = "Button-moreinfo"  
+                    data-toggle="Interstellar" 
+                    onclick="toggleContent(this)">More</button>
+            </div>
+        </div>
+    </div>
+
+        <div class="content">
+        <div class="image-container">
+            <img src="Assets/Hustle_(2022_film).jpg" class="img-container" data-aos="fade-in" data-aos-once="false" data-aos-mirror="true">
+        </div>
+        <div class="text-container">
+            <span id="text-container">
+                <h3>Hustle</h3>
+                <p>"While in Spain, a basketball scout discovers a superb street ball player and 
+                    sees the prospect as his chance to return to the NBA. While in Spain, a basketball 
+                    scout discovers a superb street ball player and sees the prospect as his chance 
+                    to return to the NBA.</p>
+                <p>In my personal life, it applies with the idea of how desparation is a good 
+                    thing at some point. We deliverately do things to achieve what we want.
+                </p>
+            </span>
+            <span id="Hustle">
+                <h1 class = "movie-title" >Hustle</h1>
+                <p class = "movie-info">Release Year: 2022</p>
+                <div class="ratings">
+                    <span>IMDb: 7.3</span>
+                    <span> 74%</span>
+                </div>
+                <p class="genre">Genre: comedy, drama, sport</p>
+                <p class="cast">Cast: Adam Sandler, Juancho Hernangomez, Anthony Edwards</p>
+            </span>
+            <button class = "Button-moreinfo"  
+                    data-toggle="Hustle" 
+                    onclick="toggleContent(this)">More</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+    <div class="image-container">
+        <img src="Assets/A Man Called Otto (2022).jpg" class="img-container" data-aos="fade-in" data-aos-once="false" data-aos-mirror="true">
+    </div>
+    <div class="text-container">
+        <span id="text-container">
+            <h3>A Man Called Otto</h3>
+            <p>"A Man Called Otto is a 2022 American comedy-drama film directed by Marc Forster 
+                and written by David Magee about a cantankerous elderly man who reluctantly becomes 
+                engaged in the lives of his neighbors. It stars Tom Hanks in the lead role, with Mariana Trevio, 
+                Rachel Keller, and Manuel Garcia-Rulfo filling out the cast.</p>
+            <p>This reflects real life by emphasizing the importance of learning
+               from experiences and by not criticizing another person without knowing
+               the reason behind their doings.
+            </p>
+        </span>
+        <span id="AManCalledOtto">
+            <h1 class = "movie-title" >A Man Called Otto</h1>
+            <p class = "movie-info">Release Year: 2022</p>
+            <div class="ratings">
+                <span>IMDb: 7.5%</span>
+                <span> 75%</span>
+            </div>
+            <p class="genre">Genre: drama, comedy</p>
+            <p class="cast">Cast: Tom Hanks, Rachel Keller, Mariana Treviño</p>
+        </span>
+        <button class = "Button-moreinfo"  
+                    data-toggle="AManCalledOtto" 
+                    onclick="toggleContent(this)">More</button>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="title-contact">Developers</h1>
+              <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                  <img
+                    src="Assets/dp.jpg"  class=" contact-img"/>
+                  <p><a href="https://github.com/jadecrpn"> Github </a></p>
+                </div>
+
+                <div class="contact-info-container">
+                    <img
+                      src="Assets/picsolo.jpg" class=" contact-img"/>
+                    <p><a href="https://github.com/AustineBill"> Github </a></p>
+                </div>
+                
+                <div class="contact-info-container">
+                    <img
+                      src="Assets/tuazon.jpg" class=" contact-img"/>
+                    <p><a href="https://github.com/mtuazon"> Github </a></p>
+                </div>
+                
+                <div class="contact-info-container">
+                    <img
+                      src="Assets/migz.jpg" class=" contact-img"/>
+                    <p><a href="https://github.com/miguelezra"> Github </a></p>
+                </div>
+              </div>
+    </section> 
+
+
+    <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href = "#about"> About</a></li>
+                <li><a href = "#contact"> Contacts </a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2023 Weflex. All Rights Reserved.</p>
+      </footer>
 
     
     <script src="script.js"></script>
