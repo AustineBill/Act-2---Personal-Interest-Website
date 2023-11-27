@@ -202,13 +202,13 @@ a:hover {
   overflow-y: hidden;
 }
 
-#home_pic a{
+.nav-links a{
   color: rgb(27, 28, 28);
   text-decoration: none;
   text-decoration-color: rgb(224, 20, 20);
 }
 
-#home_pic a:hover {
+.nav-links a:hover {
   color: red;
   text-decoration: underline;
   text-underline-offset: 1rem;
