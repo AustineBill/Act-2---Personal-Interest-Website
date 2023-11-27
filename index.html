@@ -492,9 +492,7 @@
             <div class = "Name"> Austine </div>
             <div>
                 <ul class ="nav-links">
-                    <li><a href = "#Movies"> Top Movies </a></li>
-                    <li><a href = "#Series"> Top Series </a></li>
-                    <li><a href = "#Interest"> Interest </a></li>
+                    <li><a href = "#Movies"> Top 20 Movies </a></li>
                     <li><a href = "#Hobbies"> Hobbies </a></li>
                     <li><a href = "#whoIsWatching"> Switch Account</a></li>
                 </ul>
@@ -510,8 +508,7 @@
                     <span></span>
                 </div>
                 <div class="menu-links">
-                    <li><a href= "#Movies"  onclick="toggleMenu('austine')"> Top Movies </a></li>
-                    <li><a href= "#Series" onclick="toggleMenu('austine')" > Top Series </a></li>
+                    <li><a href="#Movies"  onclick="toggleMenu('austine')"> Top 20 Movies </a></li>
                     <li><a href="#Interest" onclick="toggleMenu('austine')">Interest</a></li>
                     <li><a href="#Hobbies" onclick="toggleMenu('austine')"> Hobbies</a></li>
                     <li><a href="#whoIsWatching" onclick="toggleMenu('austine')">Switch Account</a></li>
@@ -691,12 +688,9 @@
             <div class = "Name"> Jade </div>
             <div>
                 <ul class ="nav-links">
-                    <li><a href = "#about"> About</a></li>
-                    <li><a href = "#Top5"> Top 20 Movies</a></li>
-                    <li><a href = "#Interest"> Interest </a></li>
-                    <li><a href = "#Hobbies"> Hobbies </a></li>
+                    <li><a href = "#Movies"> Top 20 Movies</a></li>
+                    <li><a href = "#Jade_Hobbies"> Hobbies </a></li>
                     <li><a href = "#whoIsWatching">Switch Account</a></li>
-                    <li><a href = "#contact"> Contacts </a></li>
                 </ul>
             </div>
         </nav>
@@ -710,12 +704,9 @@
                     <span></span>
                 </div>
                 <div class="menu-links">
-                    <li><a href="#about" onclick="toggleMenu('jade')">About</a></li>
-                    <li><a href="#Top5" onclick="toggleMenu('jade')">Top 20 Movies</a></li>
-                    <li><a href="#Interest" onclick="toggleMenu('jade')">Interest</a></li>
+                    <li><a href="#Movies" onclick="toggleMenu('jade')">Top 20 Movies</a></li>
                     <li><a href="#Hobbies" onclick="toggleMenu('jade')">Hobbies</a></li>
                     <li><a href="#whoIsWatching" onclick="toggleMenu('jade')">Switch Account</a></li>
-                    <li><a href="#contact" onclick="toggleMenu('jade')">Contacts</a></li>
                 </div>
             </div>
         </nav>
@@ -817,7 +808,7 @@
         </div>
     </section>
 
-    <section id ="Hobbies"> 
+    <section id ="Jade_Hobbies"> 
         <h1 class="title">HOBBIES</h1>
         <div class="content" >
             <div class="image-container">
@@ -893,13 +884,12 @@
         </div>
     </section>
 
-    <section id="mavi_movies" class=" ovie-section hidden">
+    <section id="mavi_movies" class=" movie-section hidden">
         <nav id = "desktop-nav">
             <div class = "Name"> Mavi </div>
             <div>
                 <ul class ="nav-links">
                     <li><a href = "#Top5"> Top 20 Movies</a></li>
-                    <li><a href = "#Interest"> Interest </a></li>
                     <li><a href = "#Mavi_Hobbies"> Hobbies </a></li>
                     <li><a href = "#whoIsWatching"> Switch Account</a></li>
                 </ul>
@@ -915,125 +905,13 @@
                     <span></span>
                 </div>
                 <div class="menu-links">
-                    <li><a href="#Top5-Mavi" onclick="toggleMenu('mavi')">Top 5 Movies</a></li>
-                    <li><a href="#Interest" onclick="toggleMenu('mavi')">Interest</a></li>
+                    <li><a href="#Top5-Mavi" onclick="toggleMenu('mavi')">Top 20 Movies</a></li>
                     <li><a href="#Mavi_Hobbies" onclick="toggleMenu('mavi')">Hobbies</a></li>
                     <li><a href="#whoIsWatching" onclick="toggleMenu('mavi')">Switch Account</a></li>
                 </div>
             </div>
         </nav>
 
-        <h1 class="Top5-Mavi">TOP 5 RECOMMENDED MOVIES</h1>
-
-        <div class="content">
-            <div class="image-container">
-                <img src="assets/love.png" class="img-container" data-aos="fade-in" data-aos-once="false" data-aos-mirror="true">
-            </div>
-            <div class="text-container">
-                <span id="text-container">
-                <h3>LOVE AT FIRST SIGHT</h3>
-                <p>Love at First Sight: On their flight from New York to London, Hadley and Oliver fall in love with each other.
-                    However, they lose each other at customs and the possibility of ever meeting each other again seems improbable,
-                    but destiny may have a way of changing the odds.
-                </p>
-                
-                    <p>In my personal life, I haven't experienced a "love at first sight" scenario as dramatic as Hadley and Oliver's,
-                        but I have heard stories from friends and family where chance encounters and unexpected connections led to lasting
-                        relationships. It reminds me that life is full of surprises, and sometimes, destiny has a way of bringing people
-                        back together, even when the odds seem slim.
-                    </p>
-                </span>
-
-                    <span id="loveatfirstsight">
-                    <h1 class = "movie-title">LOVE AT FIRST SIGHT</h1>
-                    <p class = "movie-info">Release Year: 2023</p>
-                    <div class="ratings">
-                        <span>IMDb: 4.3</span>
-                        <span> 91%</span>
-                    </div>
-                    <p class="genre">Genre: Romantic, Drama</p>
-                    <p class="cast">Cast: Haley Lu Richardson, Ben Hardy, Jameela jamil</p>
-                    </span><br>
-                    <button class = "Button-moreinfo"  
-                    data-toggle="loveatfirstsight" 
-                    onclick="toggleContent(this)">More</button>
-                
-                </div>
-            </div>
-        </div>
-            
-        <div class="content">
-            <div class="image-container">
-                <img src="assets/mebeforeyou.png" class="img-container" data-aos="fade-in" data-aos-once="false" data-aos-mirror="true">
-            </div>
-            <div class="text-container">
-                <span id="text-container">
-                <h3>ME BEFORE YOU</h3>
-                <p>Louisa Clark is an ordinary girl living an exceedingly ordinary life—steady boyfriend, close family—who has barely been farther 
-                    afield than their tiny village. She takes a badly needed job working for ex–Master of the Universe Will Traynor, who is wheelchair 
-                    bound after an accident.
-                </p>
-              
-                    <p>In real life, the situation described in "Me Before You" could be loosely related to the experiences of individuals who become 
-                        caregivers for people with disabilities due to accidents or medical conditions. While specific characters like Louisa and Will 
-                        are fictional, the challenges and relationships portrayed in the book reflect real-life scenarios where caregivers and individuals 
-                        with disabilities navigate the complexities of their situations, forming unique bonds and facing life-altering decisions.
-                    </p>
-                </span>
-
-                    <span id="mebeforeyou">
-                    <h1 class = "movie-title">ME BEFORE YOU</h1>
-                    <p class="movie-info">Release Year: 2016</p>
-                    <div class="ratings">
-                        <span>IMDb: 4.8</span>
-                        <span> 95%</span>
-                    </div>
-                    <p class="genre">Genre: Romantic, Drama</p>
-                    <p class="cast">Cast: Sam Claflin, Emilia Clarke, Matthew Lewis</p>
-                    </span><br>
-                    <button class = "Button-moreinfo"  
-                    data-toggle="mebeforeyou" 
-                    onclick="toggleContent(this)">More</button>
-                
-                </div>
-            </div>
-        </div>
-
-        <div class="content">
-            <div class="image-container">
-                <img src="assets/3idots.png" class="img-container" data-aos="fade-in" data-aos-once="false" data-aos-mirror="true">
-            </div>
-            <div class="text-container">
-                <span id="text-container">
-                <h3>3 IDIOTS</h3>
-                <p>Narrated through two parallel dramas, one in the present and the other set ten years in the past, the story follows the friendship of three 
-                    students at an Indian engineering college and is a satire about the social pressures under the Indian education system.
-                </p>
-               
-                    <p>In real life, the structure of this story reflects the way people often look back on their college years in India. It's a reminder of the 
-                        friendships and pressures experienced during that time, and how those experiences continue to shape their lives. It highlights the lasting 
-                        impact of education and relationships on individuals as they navigate their careers and personal growth.
-                    </p>
-                </span>
-
-                    <span id="threeidiots">
-                    <h1 class = "movie-title">Three Idiots</h1>
-                    <p class = "movie-info" >Release Year: 2009</p>
-                    <div class="ratings">
-                        <span>IMDb: 8.4</span>
-                        <span> 100%</span>
-                    </div>
-                    <p class="genre">Genre: Comedy, Drama</p>
-                    <p class="cast">Cast: Aamir Khan,R. Madhavan, Sharman Joshi</p>
-                    </span><br>
-                    <button class = "Button-moreinfo"  
-                    data-toggle="threeidiots" 
-                    onclick="toggleContent(this)">More</button>
-                
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section id ="Mavi_Hobbies"> 
         <h1 class="title">HOBBIES</h1>
